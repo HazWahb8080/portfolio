@@ -10,8 +10,8 @@ function Footer() {
           <div className="flex w-full space-x-4">
           <img  
           src={imgurl} className="w-24 h-24 object-cover object-center rounded-full" />
-          <h1 className="font-Marc self-center font-medium xl:text-8xl lg:text-6xl text-5xl text-white ">
-           Let's Work
+          <h1 className="font-Marc self-center font-medium xl:text-8xl lg:text-6xl text-5xl text-white">
+           Let&apos;s Work
            </h1>
           </div>
            <h1 className="font-Marc font-medium xl:text-8xl lg:text-6xl text-5xl text-white ">
