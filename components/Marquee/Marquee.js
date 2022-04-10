@@ -13,8 +13,7 @@ function Marqueex() {
        speed={60}
        gradient={false}
        > 
-          > Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass ||
-        FramerMotion GSAP MotionOne > 
+          {"> Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass || FramerMotion GSAP MotionOne >"}
        </Marquee>  
     </div>
   )
