@@ -10,10 +10,10 @@ function Marqueex() {
        <Marquee 
        pauseOnHover
        delay={0}
-       speed={60}
+       speed={100}
        gradient={false}
        > 
-          {"> Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass || FramerMotion GSAP MotionOne >"}
+          {"> Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass || Firebase CloudMongoDB SanityCms || FramerMotion GSAP MotionOne || Git || Storybook >"}
        </Marquee>  
     </div>
   )
