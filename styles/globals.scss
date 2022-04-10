@@ -7,15 +7,19 @@
 @tailwind utilities;
 
 
+
 body {
   height: 100vh;
+  width:100vw;
   overflow-y: scroll;
+  margin:0;
 }
 ::-webkit-scrollbar { 
   display: none;
 }
 
 @layer components { 
+
   .homepage { 
     @apply bg-[#EEF0F2] h-full w-full md:pb-[200px] pb-[100px] pt-24 px-6
   }

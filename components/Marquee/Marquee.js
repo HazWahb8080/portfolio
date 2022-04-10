@@ -23,7 +23,7 @@ function Marqueex() {
        speed={100}
        gradient={false}
        > 
-          {"> Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass || Firebase CloudMongoDB SanityCms || FramerMotion GSAP MotionOne || Git || Storybook >"}
+          {"> Reactjs Nextjs TypeScript || Recoil Redux || TailWindCss Bootstrap StyledComponents Sass || Firebase CloudMongoDB SanityCms || FramerMotion GSAP MotionOne || Git || ChakraUi RedixUi NextUi || Storybook >"}
        </Marquee>  
     </div>
        </div>
