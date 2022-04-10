@@ -4,6 +4,10 @@ export default [
         Url:"https://images.unsplash.com/photo-1646381731997-93d6b8f691bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     },
     {
+        title:"Lovely",
+        Url:"https://images.unsplash.com/photo-1646457995620-2987a73ab339?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
         title:"calm",
         Url:"https://images.unsplash.com/photo-1640622657553-f5af5b34ee2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     },
@@ -22,5 +26,13 @@ export default [
     {
         title:"Friendly",
         Url:"https://images.unsplash.com/photo-1646442272599-50aeb6adf0a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+        title:"Explorer",
+        Url:"https://images.unsplash.com/photo-1646431678859-fbc96c05bb8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+        title:"calm",
+        Url:"https://images.unsplash.com/photo-1640622657553-f5af5b34ee2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     },
 ]

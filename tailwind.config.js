@@ -8,6 +8,7 @@ module.exports = {
        fontFamily: {
        Marc: ["Marcellus", "serif"],
        Solata:['Inconsolata', "monospace"],
+       Forum:['Forum', "cursive"],
       },
     },
   },

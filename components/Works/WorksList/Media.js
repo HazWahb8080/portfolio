@@ -32,10 +32,11 @@ const useSize = ()=>{
 export default function Media({url,active,x,y}) {
   const [sizeRef,{width,height}] = useSize();
   return (
-    <div className="">
-    <img ref = {sizeRef} src={url} className={`  ${active ? " is-active scale-100 opacity-100" : "scale-0 opacity-0"}`}
+    <div className=" z-40">
+    <img ref = {sizeRef} src={url} className={`${active && " is-active"}`}
     style={{
-      transform:`translate(${x-width/2}px,${y-height/2}px)`
+      transform:`translate(${x-width/2}px,${y-height/2}px)`,
+      transition:"all .35s cubic-bezier(.77, 0, 0.175, 1)",
     }}
     />
     </div>

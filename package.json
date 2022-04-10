@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gsap": "^3.10.2",
     "next": "12.1.4",
     "node-sass": "^7.0.1",
     "react": "17.0.0",

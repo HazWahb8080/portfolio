@@ -3,12 +3,12 @@ import WorkList from './WorksList/WorksList';
 
 function WorksSection() {
   return (
-    <div className='pt-36 pb-36 bg-[#0D21A1] h-full w-full px-12'>
-      <div className='items-center justify-center flex flex-col py-6  border px-6 h-full w-full'>
+    <div className='pt-36 pb-36 bg-[#0D21A1] h-full w-full px-12 workslist-container '>
+      <div className='items-center justify-center flex flex-col py-6  px-6 h-full w-full'>
         
         {/* Header */}
-        <div className="flex w-full items-center justify-center">
-        <h1 className="xl:text-8xl lg:text-7xl w-3/4 text-5xl font-Marc text-[#EEF0F2]" >Recent Work</h1>
+        <div className="flex w-full items-center justify-center mb-2 lg:mb-12 ">
+        <h1 className="xl:text-8xl lg:text-7xl text-5xl w-full lg:w-3/4 font-Marc text-[#EEF0F2]" >Recent Work</h1>
         {/* side words */}
         <div className='w-1/4 items-end lg:inline-flex flex-col hidden justify-end'>
           <svg xmlns="http://www.w3.org/2000/svg" className="  h-12 w-12 stroke-[#EEF0F2]/90
