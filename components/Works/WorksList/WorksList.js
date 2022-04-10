@@ -31,7 +31,7 @@ export default function WorkList() {
     <div className="page-wrapper flex items-center justify-center w-full bg-[#0D21A1] ">
       <div className="project-list w-full  items-center justify-center flex flex-col z-40 h-full ">
       {Data.map(({title},index)=>(
-        <Title key={title} title={title} setActiveIndex={setActiveIndex} index={index}/>
+        <Title key={index} title={title} setActiveIndex={setActiveIndex} index={index}/>
       ))}
       </div>
       <div className="project-media">
@@ -39,7 +39,7 @@ export default function WorkList() {
           const isActive=index === activeindex;
           const xPos = isActive? x:0
           const yPos = isActive? y:0
-          return <Media key={Url} url={Url} active={isActive} x={xPos} y={yPos} />
+          return <Media key={index} url={Url} active={isActive} x={xPos} y={yPos} />
           })}
         </div>
       

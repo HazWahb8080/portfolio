@@ -9,6 +9,7 @@ module.exports = {
        Marc: ["Marcellus", "serif"],
        Solata:['Inconsolata', "monospace"],
        Forum:['Forum', "cursive"],
+       Hind:['Hind', "sans-serif"],
       },
     },
   },

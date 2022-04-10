@@ -1,4 +1,6 @@
 import React from 'react';
+import MagneticButton from '../Magnetic/Magnetic';
+import MagneticX from './../Magnetic/MagneticX';
 
 const imgurl = "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80";
 
@@ -19,13 +21,21 @@ function Footer() {
            </h1>
           </div>
            <div className="border-t mt-24 items-end justify-end flex border-[#EEF0F2]/50 w-full">
-             <div  className="getintouch-circle-footer">
-               <h1 className='font-Forum text-4xl font-medium text-white' >Get in touch!</h1>
-             </div>
+          <MagneticX
+          title={"Get in touch!"}
+          className=
+          {"btn-footer-touch btn-footer-text-touch font-Forum text-4xl font-medium text-white rounded-full py-24 -mt-32 "}
+          >
+          </MagneticX>
            </div>
-           <div className="px-5 w-full space-x-4 items-center justify-center 4 lg:items-start lg:justify-start flex mb-60 mt-36">
-             <button className="btn-footer">hello@hazem.codes</button>
-             <button className="btn-footer">+201552701012</button>
+           <div className="px-5 w-full space-x-4 -mt-20  items-start justify-start lg:items-start lg:justify-start flex mb-60">
+             {Array.from({length:2}, (_, i) => 
+                <div key={i} className="flex items-start justify-start ">
+                    <MagneticX
+                    title={` ${i === 0 ? "hello@hazem.codes" : "+201 552 701 12"} `}
+                    className={` btn-footer-text ${i === 0 ? "btn-footer-mail" : "btn-footer-phone"} `}
+                    /> 
+                </div>)}
            </div>
         </div>
   )

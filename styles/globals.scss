@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -41,11 +42,6 @@ body {
      @apply z-40 cursor-pointer rounded-full w-[170px] bg-[#0D21A1] px-10 py-12 -mt-24 mx-24
      hover:bg-[#0D21A1]/70 smooth hover:scale-75 duration-500
  }
- .btn-footer  { 
-   @apply py-4 px-6 bg-[#EEF0F2] rounded-full font-Solata font-bold text-2xl cursor-pointer z-40
-   hover:scale-110 smooth hover:bg-[#0D21A1]
- }
-
   .page-wrapper {
 
   
@@ -125,6 +121,57 @@ body {
   @apply  w-[500px] h-[500px] flex space-x-6 max-w-[200vw] rounded-xl
 }
 
+// Magnetic ////////////////////////////@at-root
+.magnetic-button {
+  border: transparent;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  touch-action: none;
+  
+  span {
+    display: inline-block;
+  }
+  
+  &--hover {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btn-footer-mail {
+  background: #1C1D20;
+  color: #EEF0F2;
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+.btn-footer-phone {
+  background: #1C1D20;
+  color: #EEF0F2;
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+.btn-footer-touch{
+  background: #455CE9;
+  color: #EEF0F2;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.btn-footer-text { 
+  @apply font-Hind  text-xl hover:bg-[#0D21A1] smooth duration-500 border border-[#EEF0F2] hover:scale-110
+   hover:text-[#EEC643]
+}
+.btn-footer-text-touch { 
+  @apply font-Hind  text-xl hover:bg-[#EEC643] smooth hover:scale-110 
+  hover:text-[#0D21A1]
+}
 
 
 
