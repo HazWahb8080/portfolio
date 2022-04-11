@@ -1,61 +1,51 @@
-// import React from 'react';
-// import { useEffect, useRef } from 'react';
-// import Data from '../../utils/Data';
-
-// function Slider() {
-//   const Ref = useRef(null);
-
-// useEffect(()=>{
-//   gsap.to(".container1",{
-//     // yes, we can add it to an entire timeline!
-//     scrollTrigger: {
-//       trigger: ".workslist-container",
-//       start:"bottom top",
-//       scrub:3, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//       end: "+=700px",
-//     },
-//     x:800,
-//     duration:3,
-//   });
-
-//   gsap.to(".container2",{
-//     // yes, we can add it to an entire timeline!
-//     scrollTrigger: {
-//       trigger: ".container1",
-//       start:"top top",
-//       end: "+=700px",
-//       scrub:5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//     },
-//     x:-1500,
-//     duration:5,
-//   });
-//     },[]);
+import React from 'react';
+import Data from '../../utils/Data';
 
 
 
-
-//   return (
-//     <section data-scroll-section className="containerx space-y-10 w-full bg-[#EEF0F2]  items-center justify-center py-12 ">
-
-//       {/* toright slider */}
-//     <div className="container1 slider ">
-//       {Data.map(({Url},index)=>(
-//       <img src={Url} key={index} className="w-full py-5 h-full rounded-xl "/>
-//       ))}
-//     </div>
-
-//     {/* to left slider */}
-//     <div className="container2 slider">
-//       {Data.map(({Url},index)=>(
-//       <img src={Url} key={index} className=" rounded-xl w-full h-full py-5"/>
-//       ))}
-//     </div>
-//     </section>
+function Slider() {
+  return (
+     <main className=" bg-[#EEF0F2] py-12  mt-12 mb-2 "
+	  id="main" data-scroll-section>
+      <section className="tiles tiles--oneline " id="grid2">
+				<div className="tiles__wrap">
+					<div className="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" />
+						<img className="tiles__line-img" 
+						src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1528484701073-2b22dc76649e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" />
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1566345984367-fa2ba5cedc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
 
 
+					</div>
+				</div>
+				<h2 className="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2"></h2>
+			</section>
 
-     
-//   )
-// }
 
-// export default Slider;
+      <section className="tiles tiles--oneline" id="grid3">
+				<div className="tiles__wrap">
+					<div className="tiles__line" data-scroll data-scroll-speed="-2" data-scroll-target="#grid3" data-scroll-direction="horizontal">
+						<img className="tiles__line-img"
+						 src="https://ucarecdn.com/9db1060a-91c8-43eb-acac-a22073eed8e9/apes2.webp"  />
+						<img className="tiles__line-img" 
+						src="https://images.unsplash.com/photo-1636969423277-8757e3f2cf99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img className="tiles__line-img" 
+						src="https://images.unsplash.com/photo-1615842928372-bf534d286c62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1637431936926-cbc530e851ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+					</div>
+				</div>
+				<h2 className="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2"></h2>
+			</section>
+
+
+ 
+            </main>
+  )
+}
+
+export default Slider;

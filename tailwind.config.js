@@ -10,6 +10,8 @@ module.exports = {
        Solata:['Inconsolata', "monospace"],
        Forum:['Forum', "cursive"],
        Hind:['Hind', "sans-serif"],
+       Moret:["Moret"],
+       
       },
     },
   },

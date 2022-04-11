@@ -19,27 +19,10 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 
 
-export default function Home() {
-   useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el:document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: false,
-        resetNativeScroll: true,
-      });
-    });
-    return () => scroll.destroy();
-    
-  });
-  useEffect(()=> window.dispatchEvent(new Event('resize')), [Home]);
 
+export default function Home() {
   return (
-    <div data-scroll-container
+    <div data-scroll-container scrollFromAnywhere
      className="bg-[#EEF0F2]">
       <Head>
         <title>Hazem Wahb - Junior Front-end Dev</title>
@@ -79,13 +62,11 @@ export default function Home() {
         </div>
       <HomePage/>
       <Marqueex/>
+      <Slider/>
       <Footer/> 
 
        {/* <WorksSection/> */}
 
-
-
-      {/* <Slider/> */}
     </div>
   )
 }
