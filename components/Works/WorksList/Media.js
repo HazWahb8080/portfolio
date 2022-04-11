@@ -32,7 +32,7 @@ const useSize = ()=>{
 export default function Media({url,active,x,y}) {
   const [sizeRef,{width,height}] = useSize();
   return (
-    <div className=" z-40">
+    <div  className="z-30">
     <img ref = {sizeRef} src={url} className={`${active && " is-active"}`}
     style={{
       transform:`translate(${x-width/2}px,${y-height/2}px)`,

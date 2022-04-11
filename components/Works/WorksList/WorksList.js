@@ -28,8 +28,8 @@ export default function WorkList() {
   const {x,y} = useMousePosition();
   
   return (
-    <div className="page-wrapper flex items-center justify-center w-full bg-[#0D21A1] ">
-      <div className="project-list w-full  items-center justify-center flex flex-col z-40 h-full ">
+    <div  className="page-wrapper flex items-center justify-center w-full bg-[#0D21A1] ">
+      <div className="project-list w-full  items-center justify-center flex flex-col z-30 h-full ">
       {Data.map(({title},index)=>(
         <Title key={index} title={title} setActiveIndex={setActiveIndex} index={index}/>
       ))}

@@ -3,7 +3,7 @@ import WorkList from './WorksList/WorksList';
 
 function WorksSection() {
   return (
-    <div className='pt-36 pb-36 bg-[#0D21A1] h-full w-full px-12 workslist-container '>
+    <div data-scroll-section className='pt-36 pb-36 bg-[#0D21A1] h-full w-full px-12 border-2 border-red-500 '>
       <div className='items-center justify-center flex flex-col py-6  px-6 h-full w-full'>
         
         {/* Header */}
