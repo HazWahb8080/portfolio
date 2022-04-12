@@ -14,20 +14,23 @@ import { useRecoilState } from 'recoil';
 import { LoaderState } from './../atoms/LoaderAtom';
 import Preloader from '../components/Preloader/Preloader';
 import { AnimatePresence } from 'framer-motion';
+import { TransState } from './../atoms/TransAtom';
+import PageTransition from './../components/PageTransition/PageTransition';
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
-
 });
 
 export default function Home() {
-  const [loading,setLoading] = useRecoilState(LoaderState)
+  const [loading,setLoading] = useRecoilState(LoaderState);
+  const [transition,setTransition] = useRecoilState(TransState);
+
 
    useEffect(() => {
     if (typeof window === "undefined" || loading) return;
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
-  scroll = new locomotiveModule.default({
+        scroll = new locomotiveModule.default({
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
         smoothMobile: false,
@@ -88,6 +91,7 @@ export default function Home() {
         ".project-item ",
       ]}
       />
+      {transition && <PageTransition/> }
       {!loading && <HomePage/>}
      {!loading && 
      <div data-scroll-section>

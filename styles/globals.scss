@@ -25,6 +25,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+// transition 
+.transition-container { 
+  @apply h-screen z-50 w-full bg-[#EEC643] items-center 
+  justify-center text-7xl font-Marc text-[#141414] font-bold flex 
+}
+
+
+
+
+
+
+
+
 // slider // 
 .content {
   padding: 3rem;
