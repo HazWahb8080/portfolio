@@ -88,9 +88,6 @@ export default function Home() {
         ".project-item ",
       ]}
       />
-      {!loading && <div className="w-full  items-center justify-center flex">
-      <Header/>
-        </div>}
       {!loading && <HomePage/>}
      {!loading && <Marqueex/>}
       {!loading && <Slider/>}

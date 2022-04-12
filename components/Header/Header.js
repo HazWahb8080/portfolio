@@ -6,7 +6,7 @@ import MagneticHeader from './../Magnetic/MagneticHeader';
 function Header() {
   return (
     <div  className='
-      py-2 flex items-center justify-between px-2 md:px-12 w-full bg-transparent z-[50]'>
+      py-2 flex items-center justify-between px-2 md:px-12 w-full bg-transparent'>
         <Logo/>
         <div className=' rounded-full
          space-x-4 flex items-center justify-center  z-50 smooth

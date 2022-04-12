@@ -41,10 +41,10 @@ function Preloader() {
                             ease: "power4.in",
                         }).to(bigRef.current,{
                             y:"100vh",
-                            duration:1.8,
+                            duration:1.6,
                              ease: "power4.in",
                              delay:-1.5,
-                             opacity:0.9,
+                             opacity:0.7,
                              onComplete : () => setLoading(false)
                         }).to(targets,{
                             y:"10vh",
@@ -52,9 +52,9 @@ function Preloader() {
                             delay:-0.5,
                             duration:3,
                             stagger:0.5,
-                            zIndex:1
+                            zIndex:1,
                         }).to(targets,{
-                            y:0,
+                            y:"0vh",
                             ease:"elastic",
                             duration:3,
                             delay:-2.5,

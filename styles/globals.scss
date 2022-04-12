@@ -11,37 +11,14 @@
     font-family: "Moret";
     src: url("../utils/Fonts/Moret.ttf");
   }
-.target {
-  z-index:0
-}
-
-svg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-path {
-  fill: black;
-  border: none;
-}
- 
-
-
-
 
 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
+  padding: 0;
   overflow: hidden;
-  --color-text: #111;
-  --color-number: #999;
-  --color-bg: #fff;
-  --color-link: #1352d1;
-  --color-link-hover: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -450,10 +427,10 @@ body {
 
 @layer components { 
   .homepage { 
-    @apply bg-[#EEF0F2] h-full w-full md:pb-[200px] pb-[100px] pt-24 px-6
+    @apply bg-[#EEF0F2] h-full w-full px-6 py-5
   }
   .home-container{
-    @apply   w-full h-full flex items-start justify-start pt-24
+    @apply   w-full h-full flex items-start justify-start pt-36 mt-24
   }
   .hometext-container{
     @apply  w-full py-3 px-4 
