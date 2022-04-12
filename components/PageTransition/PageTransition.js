@@ -40,7 +40,7 @@ function PageTransition() {
     }
   }}
   data-scroll-section className='transition-container opacity-0 scale-0 '>
-    {title}
+    {title === "/" ? "Home" : title}
   </motion.div> 
   </div>
   : <div/>

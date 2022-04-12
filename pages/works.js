@@ -1,22 +1,30 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import { useRecoilState } from 'recoil';
-import { TitleState } from './../atoms/TitleAtom';
 import  dynamic  from 'next/dynamic';
 import { motion } from 'framer-motion';
+import Header from '../components/Header/Header';
+import { useEffect } from 'react';
+import { useState } from 'react';
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
-
 });
 
 function Work() {
+    const [view,setView] = useState(false)
 
-    const [title,setTitle] = useRecoilState(TitleState);
+    const router = useRouter();
+    useEffect(()=>{
+        setView(false)
+        setTimeout(()=>{
+            setView(true)
+        },1700)
+    },[]);
     
 
 
   return (
-      <div className="h-screen w-full items-center justify-center flex">
+      <div data-scroll-container className="h-screen w-full items-center justify-center flex">
+
         <AnimatedCursor
       innerSize={15}
       outerSize={8}
@@ -43,24 +51,31 @@ function Work() {
         ".project-item ",
       ]}
       />
+      <div className="h-full w-full " >
+          <div
+          className={` smooth duration-500 ${ !view ?  " hidden bg-[#EEC643]" : " flex bg-transparent"}`} >
+          <Header/>
+        </div>
+
     <motion.div
     initial={{
         y:"0",
         scale:1.2,
     }}
     animate={{
-        y:"100vh",
+        y:"110vh",
         scale:1,
     }}
     transition={{
         ease:[0.83, 0, 0.17, 1],
         duration:2.5,
     }}
-
-     className="transition-container scale-125">
-        {title}
+    
+    className="transition-container scale-125">
+        {router.pathname.replace("/","")}
     </motion.div>
-      </div>
+         </div>
+        </div>
    
   )
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import { useRecoilState } from 'recoil';
-import { TitleState } from './../atoms/TitleAtom';
 import  dynamic  from 'next/dynamic';
 import { motion } from 'framer-motion';
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
@@ -11,12 +9,12 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 function About() {
 
-    const [title,setTitle] = useRecoilState(TitleState);
-    
+        const router = useRouter();
+
 
 
   return (
-      <div className="h-screen w-full items-center justify-center flex">
+      <div data-scroll-container className="h-screen w-full items-center justify-center flex">
         <AnimatedCursor
       innerSize={15}
       outerSize={8}
@@ -58,7 +56,7 @@ function About() {
     }}
 
      className="transition-container scale-125">
-        {title}
+        {router.pathname.replace("/","")}
     </motion.div>
       </div>
    

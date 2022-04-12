@@ -6,10 +6,12 @@ import { useRecoilState } from 'recoil';
 import { TitleState } from './../../atoms/TitleAtom';
 import HandleTrans from './../PageTransition/HandleTrans';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 function Header() {
     const [title,setTitle] = useRecoilState(TitleState);
     const [go,setGo] = useState(false);
+  const router = useRouter();
 
 
     const transtoWorks = () => {
@@ -25,6 +27,11 @@ function Header() {
       setTitle("contact")
       setGo(true)
     }
+   const transtoHome = () => {
+     if(router.pathname === "/") return;
+      setTitle("/")
+      setGo(true)
+    }
 
 
 
@@ -36,7 +43,9 @@ function Header() {
     <div data-scroll-section className='
       py-2 flex items-center justify-between px-2 md:px-12 w-full bg-transparent'>
         { go && <HandleTrans/>}
+        <div data-scroll onClick={transtoHome} >
         <Logo/>
+        </div>
         <div data-scroll className=' rounded-full
          space-x-4 flex items-center justify-center  z-50 smooth
             py-2 px-6 w-fit'>

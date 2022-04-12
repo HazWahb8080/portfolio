@@ -1,7 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import { useRecoilState } from 'recoil';
-import { TitleState } from './../atoms/TitleAtom';
 import  dynamic  from 'next/dynamic';
 import { motion } from 'framer-motion';
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
@@ -11,7 +9,7 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 function Contact() {
 
-    const [title,setTitle] = useRecoilState(TitleState);
+    const router = useRouter();
     
 
 
@@ -58,7 +56,7 @@ function Contact() {
     }}
 
      className="transition-container scale-125">
-        {title}
+        {router.pathname.replace("/","")}
     </motion.div>
       </div>
    

@@ -1,6 +1,8 @@
 import React from 'react';
 import MagneticButton from '../Magnetic/Magnetic';
 
+
+
 function Logo() {
 
 
@@ -17,7 +19,7 @@ function Logo() {
         borderRadius='30px'
       >
     <li data-scroll className="content-item ">
-					<a href="#" className="link link-leda text-[#011638] font-bold font-Solata w-[150px] text-[24px] " data-text="HAZEM WAHB">
+					<a className="link link-leda text-[#011638] font-bold font-Solata w-[150px] text-[24px] " data-text="HAZEM WAHB">
 						<span> Code by H. </span>
 					</a>
 				</li>
