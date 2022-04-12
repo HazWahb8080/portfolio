@@ -17,8 +17,8 @@ function Logo() {
         borderRadius='30px'
       >
     <li data-scroll className="content-item ">
-					<a href="#" className="link link-leda text-[#011638] font-bold font-Marc w-[130px] text-xl " data-text="HAZEM WAHB">
-						<span> Code by H </span>
+					<a href="#" className="link link-leda text-[#011638] font-bold font-Solata w-[150px] text-[24px] " data-text="HAZEM WAHB">
+						<span> Code by H. </span>
 					</a>
 				</li>
       </MagneticButton>

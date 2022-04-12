@@ -7,9 +7,9 @@ function HomePage() {
     <div data-scroll-section className="homepage  pb-36">
       <Header/>
       {/* Hero */}
-      <div data-scroll className="home-container  pt-24">
-        <div data-scroll  className='hometext-container'>
-        <h1  data-scroll data-scroll-speed="0.5"  data-scroll-direction="horizontal" className=' text-[#141414] only text-5xl xl:text-8xl font-Marc'>
+      <div data-scroll data-scroll-speed="0.5" className="home-container  pt-24">
+        <div data-scroll data-scroll-speed="1"  className='hometext-container'>
+        <h1  data-scroll data-scroll-speed="2" className=' text-[#141414] only text-5xl xl:text-8xl font-Marc'>
           I am Hazem W. a 22 Junior Passionate Front-end Developer Based in Egypt.
         </h1>
         </div>

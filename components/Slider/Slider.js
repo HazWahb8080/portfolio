@@ -6,8 +6,8 @@ import Data from '../../utils/Data';
 function Slider() {
   return (
      <main className=" bg-[#EEF0F2] py-12  mt-12 mb-2 "
-	  id="main" data-scroll-section>
-      <section className="tiles tiles--oneline " id="grid2">
+	  id="main" data-scroll>
+      <section  className="tiles tiles--oneline " id="grid2">
 				<div className="tiles__wrap">
 					<div className="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
 						<img className="tiles__line-img"
