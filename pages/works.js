@@ -17,13 +17,13 @@ function Work() {
         setView(false)
         setTimeout(()=>{
             setView(true)
-        },1700)
+        },17) //1700
     },[]);
     
 
 
   return (
-      <div data-scroll-container className="h-screen w-full items-center justify-center flex">
+      <div data-scroll-section className="h-screen w-full items-center justify-center flex">
 
         <AnimatedCursor
       innerSize={15}
@@ -56,6 +56,8 @@ function Work() {
           className={` smooth duration-500 ${ !view ?  " hidden bg-[#EEC643]" : " flex bg-transparent"}`} >
           <Header/>
         </div>
+
+        {/* List of Works */}
 
     <motion.div
     initial={{

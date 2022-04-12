@@ -19,7 +19,7 @@ function Logo() {
         borderRadius='30px'
       >
     <li data-scroll className="content-item ">
-					<a className="link link-leda text-[#011638] font-bold font-Solata w-[150px] text-[24px] " data-text="HAZEM WAHB">
+					<a className="link link-leda text-[#141414] font-bold font-Solata w-[150px] text-[24px] " data-text="HAZEM WAHB">
 						<span> Code by H. </span>
 					</a>
 				</li>

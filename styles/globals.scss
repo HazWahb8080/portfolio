@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #EEF0F2;
+  background: white;
 ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,7 +29,7 @@ body {
 
 // transition 
 .transition-container { 
-  @apply h-screen z-50 w-full bg-[#EEF0F2] items-center 
+  @apply h-screen z-50 w-full bg-white items-center 
   justify-center text-7xl font-Marc text-[#141414] font-bold flex 
 }
 
@@ -438,7 +438,7 @@ body {
 
 @layer components { 
   .homepage { 
-    @apply bg-[#EEF0F2] h-full w-full px-6 py-5 overflow-hidden
+    @apply bg-white h-full w-full px-6 py-5 overflow-hidden
   }
   .home-container{
     @apply   w-full h-full flex items-start justify-start pt-36 mt-24

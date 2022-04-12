@@ -90,7 +90,7 @@ function Preloader() {
             }}
 
 
-     className=" bg-[#EEF0F2] w-full h-full items-center justify-center flex"> 
+     className=" bg-white w-full h-full items-center justify-center flex"> 
         
                 <motion.h1
                  ref={elemRef} className="md:text-8xl text-5xl slef-center text-[#0D21A1] font-Marc font-bold" id="preloader"

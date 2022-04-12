@@ -21,7 +21,7 @@ function Marqueex() {
 
     <div data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" 
     className='text-[#141414] text-4xl space-x-4
-     py-10   bg-[#EEF0F2] font-bold border-y border-[#141414]
+     py-10   bg-white font-bold border-y border-[#141414]
      font-Solata  w-full '>
        <Marquee 
        direction='right'

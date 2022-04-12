@@ -14,7 +14,7 @@ function About() {
 
 
   return (
-      <div data-scroll-container className="h-screen w-full items-center justify-center flex">
+      <div data-scroll-section className="h-screen w-full items-center justify-center flex">
         <AnimatedCursor
       innerSize={15}
       outerSize={8}
