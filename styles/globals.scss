@@ -14,11 +14,13 @@
 
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: #EEF0F2;
+;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -427,7 +429,7 @@ body {
 
 @layer components { 
   .homepage { 
-    @apply bg-[#EEF0F2] h-full w-full px-6 py-5
+    @apply bg-[#EEF0F2] h-full w-full px-6 py-5 overflow-hidden
   }
   .home-container{
     @apply   w-full h-full flex items-start justify-start pt-36 mt-24

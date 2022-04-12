@@ -58,14 +58,13 @@ function Preloader() {
                             ease:"elastic",
                             duration:3,
                             delay:-2.5,
+                            stagger:0.8,
                         })
-                        
-
-                    },500)
+                   },500)
                     clearInterval(int)
                      }
-                }, 180);
-            },800)
+                }, 250);
+            },1200)
     },[]);
     
  
@@ -76,38 +75,26 @@ function Preloader() {
       
       <motion.div ref={bigRef}
        className="bg-[#141414] p-8  xl:p-12 z-50 h-[100vh] items-center flex justify-center w-full ">
-    <motion.div ref={miniRef}
-    initial={{
-        scale:0,
-    }}
-    animate={{
-        scale:1,
-    }}
-    transition={{
-        duration:1.3,
-        ease:[0.6,0.01,-0.05,0.9],
-    }}
+            <motion.div ref={miniRef}
+            initial={{
+                opacity:0,
+                scale:0,
+            }}
+            animate={{
+                opacity:1,
+                scale:1,
+            }}
+            transition={{
+                duration:1,
+                ease:[0.6,0.01,-0.05,0.9],
+            }}
 
 
      className=" bg-[#EEF0F2] w-full h-full items-center justify-center flex"> 
         
                 <motion.h1
                  ref={elemRef} className="md:text-8xl text-5xl slef-center text-[#0D21A1] font-Marc font-bold" id="preloader"
-                 initial={{
-                     opacity:0.5,
-                     scale:0,
-                 }}
-                 animate={{
-                     opacity:1,
-                     scale:1,
-                 }} 
-                 transition={{
-                     delay:0.5,
-                     ease:[0.83, 0, 0.17, 1],
-                     duration:0.5,
-                 }}
                  >
-                    WELCOME!
                 </motion.h1>
             </motion.div>
           </motion.div> 

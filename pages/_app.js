@@ -14,7 +14,9 @@ function MyApp({ Component, pageProps }) {
   return (
 
     <RecoilRoot>
+      <div data-scroll-container className=" big  w-full h-full overflow-hidden">
         <Component {...pageProps}/>
+      </div>
       </RecoilRoot>
   )
 }
