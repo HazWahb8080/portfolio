@@ -22,7 +22,7 @@ function Slider() {
 
 					</div>
 				</div>
-				<h2 className="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2"></h2>
+				<h2 className="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2">Full-Stack</h2>
 			</section>
 
 
@@ -39,11 +39,25 @@ function Slider() {
 						 src="https://images.unsplash.com/photo-1637431936926-cbc530e851ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
 					</div>
 				</div>
-				<h2 className="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2"></h2>
+				<h2 className="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2">Mini-Awwwards</h2>
 			</section>
 
 
- 
+    <section className="tiles tiles--oneline" id="grid4">
+				<div className="tiles__wrap">
+					<div className="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid4" data-scroll-direction="horizontal">
+						<img className="tiles__line-img" 
+						src="https://images.unsplash.com/photo-1641437639284-fe3b18b7a1a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80/"/>
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1610216165491-d746db827214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1626358228177-abe1b30e1283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						<img className="tiles__line-img"
+						 src="https://images.unsplash.com/photo-1636969423277-8757e3f2cf99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+					</div>
+				</div>
+				<h2 className="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll data-scroll-speed="2">Experimentals</h2>
+			</section>
             </main>
   )
 }

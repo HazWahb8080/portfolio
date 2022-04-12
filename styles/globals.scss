@@ -11,6 +11,22 @@
     font-family: "Moret";
     src: url("../utils/Fonts/Moret.ttf");
   }
+.target {
+  z-index:0
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+path {
+  fill: black;
+  border: none;
+}
+ 
 
 
 
@@ -114,7 +130,7 @@ body {
   position: relative;
   overflow: hidden;
 
-  @apply font-Marc tracking-widest text-[#EEC643]
+  @apply font-Marc tracking-widest text-[#141414]
 }
 .button-1 {
   padding: 20px 30px;
@@ -446,9 +462,11 @@ body {
     @apply transition ease-in-out duration-200
   }
   .menu-item-container{
-    @apply font-Marc text-lg  px-6 py-3 cursor-pointer rounded-full
-     smooth hover:bg-[#0D21A1] hover:text-[#EEC643] shadow-xl shadow-gray-400/10
-      hover:shadow-blue-800/50 transition ease-in-out duration-500
+    @apply font-Marc cursor-pointer
+     smooth duration-300 hover:scale-125
+  }
+  .nav-lnk { 
+    @apply hover:text-[#0D21A1] text-xl font-medium text-[#011638]
   }
   .getintouch-circle-footer {
      @apply z-40 cursor-pointer rounded-full w-[170px] bg-[#0D21A1] px-10 py-12 -mt-24 mx-24

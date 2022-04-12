@@ -1,35 +1,30 @@
 import '../styles/globals.scss';
 import { useRef, useEffect,useState } from "react";
+import { RecoilRoot, useRecoilState } from 'recoil';
+import { LoaderState } from './../atoms/LoaderAtom';
+import {motion,AnimatePresence} from "framer-motion";
+import { useRouter } from 'next/router';
+
+
 
 
 function MyApp({ Component, pageProps }) {
-   useEffect(() => {
-    if (typeof window === "undefined") return;
-  
-    let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el:document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: false,
-        resetNativeScroll: true,
-      });
-    });
+  const router = useRouter();
 
-    return () => scroll.destroy();
-
+  function handleExitComplete() {
     
-  });
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0 })
+  }
+}
 
-  useEffect(()=> window.dispatchEvent(new Event('resize')), [Component]);
-
-
- 
-  
   return (
-    <div data-scroll-container className='overlfow-hidden' >
-  <Component {...pageProps} />
-    </div>
+
+    <RecoilRoot>
+      <AnimatePresence exitBeforeEnter  onExitComplete={handleExitComplete}>
+        <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+      </RecoilRoot>
   )
 }
 

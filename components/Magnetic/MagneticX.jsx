@@ -7,15 +7,15 @@ function MagneticX({title,className}) {
                 className={`${className}`}
                 style={{backgroundColor: 'transparent'}}
                 scale={1}
-                tollerance={1}
-                speed={.2}
+                tollerance={.8}
+                speed={.3}
                 borderRadius='50%'
               >
                 <MagneticButton
                   className={`${className}`}
-                  scale={2}
-                  tollerance={1.3}
-                  speed={.7}
+                  scale={4}
+                  tollerance={1}
+                  speed={.5}
                   borderRadius='50%'
                 >
                  {title}

@@ -1,22 +1,25 @@
 import React from 'react';
+import Logo from './../Logo/Logo';
+import MagneticButton from './../Magnetic/Magnetic';
+import MagneticHeader from './../Magnetic/MagneticHeader';
 
 function Header() {
   return (
-    <div  className='fixed bottom-0 
-      py-6 flex items-center justify-center w-1/2 bg-transparent z-50 mt-12'>
-        <div className=' border rounded-full
-         space-x-4 flex items-center justify-center bg-[#EEF0F2] hover:shadow-2xl z-50 smooth
-           hover:shadow-[#0D21A1]/20 py-2 px-6 w-fit'>
-             <div className='menu-item-container'>
-                 <h1>Works</h1>
+    <div  className='
+      py-2 flex items-center justify-between px-2 md:px-12 w-full bg-transparent z-[50]'>
+        <Logo/>
+        <div className=' rounded-full
+         space-x-4 flex items-center justify-center  z-50 smooth
+            py-2 px-6 w-fit'>
+              {Array.from({length:3}, (_, i) =>
+             <div key={i} className='menu-item-container'>
+               <MagneticHeader
+               title={ i===0 ?  "Works" : i===1 ? "About" : "Contact"}
+               link={i===0 ?  "/works" : i===1 ? "/about" : "/contact"}
+               index={i===0 ?  0 : i===1 ? 1 : 2}
+               />
              </div>
-             <div  className='menu-item-container'>
-                 <h1>About</h1>
-             </div>
-             <div  className='menu-item-container'>
-                 <h1>Contact</h1>
-             </div>
-
+              )} 
         </div>
 
 

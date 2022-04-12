@@ -8,7 +8,7 @@ function Logo() {
 
 
   return (
-    <div  data-scroll-section className="w-full border-b items-start justify-start flex z-30 px-12 py-6 ">
+    <div  data-scroll-section className="target items-start justify-start flex z-30">
       <MagneticButton
         className="button-1"
         scale={1}
@@ -17,7 +17,7 @@ function Logo() {
         borderRadius='30px'
       >
     <li data-scroll  className="content-item ">
-					<a href="#" className="link link-leda text-[#141414]  font-bold font-Marc w-[130px]" data-text="HAZEM WAHB">
+					<a href="#" className="link link-leda text-[#011638] font-bold font-Marc w-[130px] text-xl " data-text="HAZEM WAHB">
 						<span> Code by H </span>
 					</a>
 				</li>
