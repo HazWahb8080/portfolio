@@ -5,7 +5,7 @@ import Data from '../../utils/Data';
 
 function Slider() {
   return (
-     <main className=" bg-white py-12  mt-12 mb-2 "
+     <main className=" bg-white pb-12 mb-2 "
 	  id="main" data-scroll>
       <section  className="tiles tiles--oneline " id="grid2">
 				<div className="tiles__wrap">

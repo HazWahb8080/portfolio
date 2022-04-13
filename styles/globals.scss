@@ -27,6 +27,7 @@ body {
 
 
 
+
 // transition 
 .transition-container { 
   @apply h-screen z-50 w-full bg-white items-center 
@@ -460,6 +461,9 @@ body {
      @apply z-40 cursor-pointer rounded-full w-[170px] bg-[#0D21A1] px-10 py-12 -mt-24 mx-24
      hover:bg-[#0D21A1]/70 smooth hover:scale-75 duration-500
  }
+    .conX {
+      @apply flex items-center justify-center
+    }
   
 
 // Magnetic

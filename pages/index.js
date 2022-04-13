@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import HomePage from "../components/Home/HomePage";
-import WorksSection from "../components/Works/WorksSection";
 import Marqueex from "../components/Marquee/Marquee";
 import Header from './../components/Header/Header';
 import Slider from '../components/Slider/Slider';
@@ -17,6 +16,7 @@ import { AnimatePresence } from 'framer-motion';
 import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
+ import WorksLanding from './../components/Works/WorksLanding';
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -26,15 +26,14 @@ export default function Home() {
   const [loading,setLoading] = useRecoilState(LoaderState);
   const [once,setOnce] = useRecoilState(OnceState);
   const [transition,setTransition] = useRecoilState(TransState);
-  console.log(once)
 
 
    useEffect(() => {
     if (typeof window === "undefined" || loading) return;
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
-    
-    scroll = new locomotiveModule.default({
+   
+scroll = new locomotiveModule.default({
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
         smoothMobile: false,
@@ -54,7 +53,7 @@ export default function Home() {
     setTimeout(()=>{
       setOnce(true)
     setLoading(false)
-  },10000)
+  },1) //10000
 }
 },[]);
 
@@ -73,7 +72,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       {loading && !once && (<Preloader/>)}
+       {/* {loading && !once && (<Preloader/>)} */}
 
       <AnimatedCursor
       innerSize={15}
@@ -85,6 +84,7 @@ export default function Home() {
       clickables={[
         'a',
         "li",
+        ".works-el",
         ".content__item",
         'input[type="text"]',
         'input[type="email"]',
@@ -99,6 +99,7 @@ export default function Home() {
         ".menu-item-container",
         ".getintouch-circle-footer",
         ".project-item ",
+        ".view",
       ]}
       />
       {transition && <PageTransition/> }
@@ -108,14 +109,20 @@ export default function Home() {
      <Marqueex/>
      </div>
      }
+     {
+       !loading &&
+       <div data-scroll-section>
+         <WorksLanding/>
+         </div>
+     }
+
       {!loading &&
        <div data-scroll-section>
        <Slider/>
        </div>
        }
-     {!loading && <Footer/>}
 
-       {/* <WorksSection/> */}
+     {!loading && <Footer/>}
 
     </div>
   )

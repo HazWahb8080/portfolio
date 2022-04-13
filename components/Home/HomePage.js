@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './../Header/Header';
-import WorksSection from './../Works/WorksSection';
 import { useState } from 'react';
 
 
