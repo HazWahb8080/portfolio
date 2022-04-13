@@ -24,7 +24,20 @@ function PageTransition() {
   
 
   return  time ? 
-  <div className="bg-black h-screen w-full items-center justify-center flex px-12 py-6 ">
+  <motion.div
+  initial = {{
+    scale:0.5,
+    opacity:0,
+  }}
+  animate={{
+    scale:1,
+    opacity:1,
+    }}
+    transition={{
+                duration:0.8,
+                ease:[0.83, 0, 0.17, 1],
+            }}
+   className="bg-black h-screen w-full items-center justify-center flex px-12 py-6 ">
   <motion.div 
   initial={{
     y:"-2vh",
@@ -42,7 +55,8 @@ function PageTransition() {
   data-scroll-section className='transition-container bg-white  border border-black  opacity-0 scale-0 '>
     {title === "/" ? "Home" : title.includes("works/") ? `${title.replace("works/","")}` : title}
   </motion.div> 
-  </div>
+  </motion.div>
+
   : <div/>
 
 

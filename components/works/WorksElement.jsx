@@ -38,12 +38,13 @@ function WorksElement({tittle,link,description,image,did,category,subtitle}) {
   return (
     <div data-scroll className="space-y-4 workel py-3 px-12 w-full lg:w-1/2 items-center justify-center flex-col flex">
         { go && <HandleTrans/>}
-        <div data-scroll className="w-full   h-full items-center justify-center">
+        <div data-scroll className="w-full overflow-hidden  h-full items-center justify-center">
         <motion.img
         onClick={transtoproject1}
         data-scroll
-        animate={{
-            transition:{
+        whileHover ={{
+            scale: 1.2,
+             transition:{
                 duration:1.5,
                 ease:[0.83, 0, 0.17, 1],
             }
