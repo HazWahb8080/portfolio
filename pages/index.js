@@ -6,6 +6,7 @@ import Marqueex from "../components/Marquee/Marquee";
 import Header from './../components/Header/Header';
 import Slider from '../components/Slider/Slider';
 import Footer from '../components/Footer/Footer';
+import WorksLanding from '../components/works/WorksLanding';
 import Logo from './../components/Logo/Logo';
 import { useRef, useState,useEffect } from "react"; 
 import dynamic from 'next/dynamic';
@@ -32,8 +33,8 @@ export default function Home() {
     if (typeof window === "undefined" || loading) return;
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
-   
-scroll = new locomotiveModule.default({
+
+        scroll = new locomotiveModule.default({
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
         smoothMobile: false,
@@ -77,14 +78,14 @@ scroll = new locomotiveModule.default({
       <AnimatedCursor
       innerSize={15}
       outerSize={8}
-      color='0,0,0'
+      color='186,0,0'
       outerAlpha={0.4}
       innerScale={0.7}
       outerScale={8}
       clickables={[
         'a',
         "li",
-        ".works-el",
+        ".workel",
         ".content__item",
         'input[type="text"]',
         'input[type="email"]',
@@ -110,6 +111,9 @@ scroll = new locomotiveModule.default({
      </div>
      }
 
+     
+     
+
       {!loading &&
        <div  data-scroll-section
        className="bg-black pt-12  rounded-t-[150px] z-50 w-full h-full"
@@ -117,6 +121,9 @@ scroll = new locomotiveModule.default({
        <Slider/>
        </div>
        }
+
+       {!loading &&<WorksLanding/>}
+
 
      {!loading &&
        <div data-scroll-section>

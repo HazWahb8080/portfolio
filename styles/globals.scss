@@ -455,7 +455,9 @@ body {
 
 // logo //
 
-
+.smallwords{
+  @apply text-3xl lg:text-6xl font-Marc  mt-48
+}
 
 .content-item {
   width: 100%;

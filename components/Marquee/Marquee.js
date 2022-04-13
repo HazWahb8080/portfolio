@@ -22,7 +22,7 @@ function Marqueex() {
 
     <div 
     className='text-black text-6xl space-x-4
-     py-12 z-0   bg-white font-bold 
+     py-12 z-0   bg-white font-medium 
      font-Solata  w-full overflow-hidden '>
        <Marquee 
        direction='right'
