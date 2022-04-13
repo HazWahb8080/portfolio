@@ -48,15 +48,15 @@ export default function Home() {
 
 
 
-//   useEffect(()=>{
-//     if(!once)
-//   {
-//     setTimeout(()=>{
-//       setOnce(true)
-//     setLoading(false)
-//   },10000) //10000
-// }
-// },[]);
+  useEffect(()=>{
+    if(!once)
+  {
+    setTimeout(()=>{
+      setOnce(true)
+    setLoading(false)
+  },10000) //10000
+}
+},[]);
 
 
 
@@ -103,6 +103,7 @@ export default function Home() {
         ".view",
       ]}
       />
+
       {transition && <PageTransition/> }
       
      {!loading && 

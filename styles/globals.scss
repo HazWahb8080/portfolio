@@ -113,7 +113,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -124,7 +124,7 @@ body {
 // transition 
 .transition-container { 
   @apply h-screen z-50 w-full bg-white items-center 
-  justify-center text-7xl font-Marc text-[#141414] font-bold flex 
+  justify-center text-7xl font-Marc text-black font-bold flex 
 }
 
 

@@ -16,7 +16,7 @@ function HandleTrans() {
         setTransition(true)
       }
         setTimeout(() => {
-          router.push(`/${title.replace("/","")}`)
+          router.push(`${title}`)
         },1000);
       } 
     );

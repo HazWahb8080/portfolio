@@ -7,13 +7,40 @@ import { useRouter } from 'next/router';
 
 function WorksElement({tittle,link,description,image,did,category,subtitle}) {
 
+            const [title,setTitle] = useRecoilState(TitleState);
+            const [go,setGo] = useState(false);
+            const router = useRouter();
+
+
+            const transtoproject1 = () => {
+            setTitle("works/cbc")
+            setGo(true)
+            }
+
+            const transtoproject2 = () => {
+            setTitle("works/spotifybuild")
+            setGo(true)
+            }
+
+            const transtoproject3 = () => {
+            setTitle("works/awwrds1")
+            setGo(true)
+            }
+
+            const transtoproject4 = () => {
+            setTitle("exps/gstories")
+            setGo(true)
+            }
+
 
 
     const [clicked,setClicked] = useState(false);
   return (
     <div data-scroll className="space-y-4 workel py-3 px-12 w-full lg:w-1/2 items-center justify-center flex-col flex">
+        { go && <HandleTrans/>}
         <div data-scroll className="w-full   h-full items-center justify-center">
         <motion.img
+        onClick={transtoproject1}
         data-scroll
         animate={{
             transition:{
