@@ -16,7 +16,7 @@ import { AnimatePresence } from 'framer-motion';
 import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
- import WorksLanding from './../components/Works/WorksLanding';
+
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -47,15 +47,15 @@ scroll = new locomotiveModule.default({
 
 
 
-  useEffect(()=>{
-    if(!once)
-  {
-    setTimeout(()=>{
-      setOnce(true)
-    setLoading(false)
-  },1) //10000
-}
-},[]);
+//   useEffect(()=>{
+//     if(!once)
+//   {
+//     setTimeout(()=>{
+//       setOnce(true)
+//     setLoading(false)
+//   },10000) //10000
+// }
+// },[]);
 
 
 
@@ -72,7 +72,7 @@ scroll = new locomotiveModule.default({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       {/* {loading && !once && (<Preloader/>)} */}
+       {loading && !once && (<Preloader/>)}
 
       <AnimatedCursor
       innerSize={15}
@@ -103,26 +103,26 @@ scroll = new locomotiveModule.default({
       ]}
       />
       {transition && <PageTransition/> }
-      {!loading && <HomePage/>}
+      
      {!loading && 
      <div data-scroll-section>
-     <Marqueex/>
+     <HomePage/>
      </div>
-     }
-     {
-       !loading &&
-       <div data-scroll-section>
-         <WorksLanding/>
-         </div>
      }
 
       {!loading &&
-       <div data-scroll-section>
+       <div  data-scroll-section
+       className="bg-black pt-12  rounded-t-[150px] z-50 w-full h-full"
+       >
        <Slider/>
        </div>
        }
 
-     {!loading && <Footer/>}
+     {!loading &&
+       <div data-scroll-section>
+       <Footer/>
+       </div>
+       }
 
     </div>
   )

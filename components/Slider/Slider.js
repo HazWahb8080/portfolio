@@ -5,11 +5,11 @@ import Data from '../../utils/Data';
 
 function Slider() {
   return (
-     <main className=" bg-white pb-12 mb-2 "
-	  id="main" data-scroll>
-      <section  className="tiles tiles--oneline " id="grid2">
-				<div className="tiles__wrap">
-					<div className="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+     <main className="pb-12 mb-2 z-50  rounded-y-[150px]"
+	  id="main" data-scroll data-scroll-speed="0" >
+      <section data-scroll  className="tiles tiles--oneline rounded-y-[150px] " id="grid2">
+				<div className="tiles__wrap rounded-y-[150px]  ">
+					<div className="tiles__line rounded-t-[150px]" data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
 						<img className="tiles__line-img"
 						 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" />
 						<img className="tiles__line-img" 

@@ -41,7 +41,7 @@ function Header() {
 
   return (
     <div data-scroll-section className='
-      py-2 flex items-center justify-between px-2 md:px-12 w-full bg-transparent'>
+      flex items-center justify-between z-50 px-2 md:px-12 w-full bg-transparent py-3'>
         { go && <HandleTrans/>}
         <div data-scroll onClick={transtoHome} >
         <Logo/>
@@ -51,7 +51,7 @@ function Header() {
             py-2 px-6 w-fit'>
               {Array.from({length:3}, (_, i) =>
              <div data-scroll key={i}
-              className='menu-item-container'
+              className='menu-item-container text-black'
                 onClick={()=>
                   i===0 ? transtoWorks():
                   i===1 ? transtoAbout():

@@ -6,9 +6,9 @@ const imgurl = "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixl
 
 function Footer() {
   return (
-    <div data-scroll-section  className="h-full mt-24
+    <div data-scroll  className="h-full mt-24
      rounded-t-[150px] items-start pt-36 px-12 xl:pt-72 xl:px-72 pb-12 justify-start 
-    flex flex-col bg-[#1C1D20] w-full">
+    flex flex-col bg-black w-full">
 
         <div data-scroll data-scroll-speed="3"  className=" w-full xl:w-3/4  flex flex-col items-start justify-start py-3">
           <div  className="flex w-full space-x-4">

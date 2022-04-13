@@ -11,7 +11,7 @@ function MagneticHeader({title,link,active,index}) {
                   speed={0.5}
                   borderRadius='30px'
                     >
-                    <h1 className='nav-lnk' >{title}</h1>
+                    <h1 className='text-black text-xl font-bold font-Solata ' >{title}</h1>
                   </MagneticButton>
   )
 }
