@@ -9,7 +9,15 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 function Contact() {
 
+     const [view,setView] = useState(false)
+
     const router = useRouter();
+    useEffect(()=>{
+        setView(false)
+        setTimeout(()=>{
+            setView(true)
+        },1700) //1700
+    },[]);
     
 
 

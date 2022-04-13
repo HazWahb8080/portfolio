@@ -17,7 +17,7 @@ function Work() {
         setView(false)
         setTimeout(()=>{
             setView(true)
-        },17) //1700
+        },1700) //1700
     },[]);
     
 
@@ -25,7 +25,7 @@ function Work() {
   return (
       <div data-scroll-section className="h-screen w-full items-center justify-center flex">
 
-        <AnimatedCursor
+        { view && <AnimatedCursor
       innerSize={15}
       outerSize={8}
       color='0,0,0'
@@ -50,7 +50,7 @@ function Work() {
         ".getintouch-circle-footer",
         ".project-item ",
       ]}
-      />
+      />}
       <div className="h-full w-full " >
           <div
           className={` smooth duration-500 ${ !view ?  " hidden bg-[#EEC643]" : " flex bg-transparent"}`} >
