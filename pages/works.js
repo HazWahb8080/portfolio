@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header/Header';
 import { useEffect } from 'react';
 import { useState } from 'react';
+const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+  ssr: false
+});
 
 
 function Work() {
@@ -22,6 +25,36 @@ function Work() {
 
   return (
       <div data-scroll-container className="h-screen w-full items-center justify-center flex">
+          <AnimatedCursor
+      innerSize={15}
+      outerSize={8}
+      color='186,0,0'
+      outerAlpha={0.4}
+      innerScale={0.7}
+      outerScale={8}
+      clickables={[
+        'a',
+        "li",
+        ".tech",
+        ".feature",
+        ".workel",
+        ".content__item",
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        ".menu-item-container",
+        ".getintouch-circle-footer",
+        ".project-item ",
+        ".view",
+      ]}
+      />
 
        
       <div className="h-full w-full " >

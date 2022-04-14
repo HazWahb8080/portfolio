@@ -39,18 +39,19 @@ function Header() {
 
 
   return (
-    <div data-scroll-section className='
-      flex items-center justify-between z-50 px-2 md:px-12 w-full bg-transparent py-3'>
+    <div data-scroll-section className={`flex items-center justify-between z-50 px-2 md:px-12  py-3 w-full bg-transparent} 
+      `}>
         { go && <HandleTrans/>}
         <div data-scroll onClick={transtoHome} >
         <Logo/>
         </div>
         <div data-scroll className=' rounded-full
          space-x-4 flex items-center justify-center  z-50 smooth
-            py-2 px-6 w-fit'>
+         py-2 px-6 w-fit'>
               {Array.from({length:3}, (_, i) =>
              <div data-scroll key={i}
-              className='menu-item-container text-black'
+              className={`menu-item-container  ${router.pathname==="/works" || router.pathname==="/about" || router.pathname==="/contact" 
+              ? 'text-white' : "text-black"}`}
                 onClick={()=>
                   i===0 ? transtoWorks():
                   i===1 ? transtoAbout():
