@@ -60,11 +60,11 @@ function Preloader() {
                             delay:-2.5,
                             stagger:0.8,
                         })
-                   },500)
+                   },500) //500
                     clearInterval(int)
                      }
-                }, 250);
-            },1200)
+                }, 250); //250
+            },1200) //1200
     },[]);
     
  
@@ -85,7 +85,7 @@ function Preloader() {
                 scale:1,
             }}
             transition={{
-                duration:1,
+                duration:0, //1
                 ease:[0.6,0.01,-0.05,0.9],
             }}
 

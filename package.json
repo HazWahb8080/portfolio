@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hook/hover": "^4.0.0",
     "framer-motion": "^6.2.9",
     "gsap": "^3.10.2",
     "locomotive-scroll": "^4.1.4",

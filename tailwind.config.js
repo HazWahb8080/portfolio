@@ -11,6 +11,7 @@ module.exports = {
        Forum:['Forum', "cursive"],
        Hind:['Hind', "sans-serif"],
        Moret:["Moret"],
+       Popp:['Poppins', 'sans-serif'],
        
       },
     },

@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inconsolata:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +13,12 @@
     font-family: "Moret";
     src: url("../utils/Fonts/Moret.ttf");
   }
-  
+  .tech{
+    @apply font-Popp flex flex-col justify-start items-start xl:text-lg text-sm w-full py-1 text-left font-extrabold text-white
+  }
+  .feature{
+    @apply font-Popp flex justify-start items-start xl:text-lg text-sm w-full py-1 text-left font-extrabold text-white
+  }
 
 
 
@@ -456,7 +463,7 @@ body {
 // logo //
 
 .smallwords{
-  @apply text-3xl lg:text-6xl font-Marc  mt-48
+  @apply text-3xl lg:text-6xl 
 }
 
 

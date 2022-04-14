@@ -38,7 +38,7 @@ export default function Home() {
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
         smoothMobile: false,
-        resetNativeScroll: false,
+        resetNativeScroll: true,
       });
     });
 
@@ -85,6 +85,8 @@ export default function Home() {
       clickables={[
         'a',
         "li",
+        ".tech",
+        ".feature",
         ".workel",
         ".content__item",
         'input[type="text"]',
@@ -106,6 +108,7 @@ export default function Home() {
 
       {transition && <PageTransition/> }
       
+      {!loading &&<WorksLanding/>}
      {!loading && 
      <div data-scroll-section>
      <HomePage/>
@@ -123,7 +126,6 @@ export default function Home() {
        </div>
        }
 
-       {!loading &&<WorksLanding/>}
 
 
      {!loading &&
