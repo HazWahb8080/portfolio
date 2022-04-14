@@ -85,7 +85,7 @@ function Preloader() {
                 scale:1,
             }}
             transition={{
-                duration:0, //1
+                duration:1, //1
                 ease:[0.6,0.01,-0.05,0.9],
             }}
 

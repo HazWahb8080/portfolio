@@ -52,7 +52,7 @@ function CBCSlide() {
       
     {/* first row */}
 
-            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2 border items-start h-[2500px]  justify-start  md:px-3 w-full">
+            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[2500px]  justify-start  md:px-3 w-full">
 
                 {/* words about the project */}
 
@@ -161,12 +161,73 @@ function CBCSlide() {
              {/* libs */}
              <h1 data-scroll  className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Libraries</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
-                <div data-scroll 
-              className='feature'>
-            <h1 ></h1>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>@chakra-ui/icons</p>
+            <p>@chakra-ui/react</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>@headlessui/react</p>
+            <p>@radix-ui/react-toast</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>avvvatars-react</p>
+            <p>@nextui-org/react</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>@sendgrid/mail</p>
+            <p>@stripe/stripe-js</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>@uploadcare/react-widget</p>
+            <p>axios</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>date-fns</p>
+            <p>js-file-download</p>
+            </div>
+            <div data-scroll className='feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 '>
+            <p>react-quill</p>
+            <p>react-timeago</p>
             </div>
 
                 </div>
+
+                {/* "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.6",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@next-auth/firebase-adapter": "^0.1.2-pr.183-76202b42.8",
+    "@nextui-org/react": "^1.0.2-beta.4",
+    "@radix-ui/react-toast": "^0.1.1",
+    "@sendgrid/mail": "^7.6.1",
+    "@stripe/react-stripe-js": "^1.7.0",
+    "@stripe/stripe-js": "^1.22.0",
+    "@uploadcare/react-widget": "^1.3.10",
+    "avvvatars-react": "^0.3.1",
+    "axios": "^0.25.0",
+    "date-fns": "^2.28.0",
+    "firebase": "^9.6.6",
+    "framer-motion": "^6.2.8",
+    "html-react-parser": "^1.4.7",
+    "js-file-download": "^0.4.12",
+    "next": "^12.0.10",
+    "next-auth": "^4.2.1",
+    "nodemailer": "^6.7.2",
+    "react": "^17.0.2",
+    "react-currency-format": "^1.1.0",
+    "react-dom": "^17.0.2",
+    "react-dynamic": "^1.0.3",
+    "react-firebase-hooks": "^4.0.1",
+    "react-html-parser": "^2.0.2",
+    "react-icons": "^4.3.1",
+    "react-jump": "^0.0.9",
+    "react-quill": "^1.3.5",
+    "react-scroll": "^1.8.5",
+    "react-timeago": "^6.2.1",
+    "request": "^2.88.2",
+    "stripe": "^8.202.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "uuid": "^8.3.2" */}
 
 
 

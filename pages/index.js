@@ -17,6 +17,8 @@ import { AnimatePresence } from 'framer-motion';
 import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
+import Divider from './../components/divider/Divider';
+
 
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
@@ -54,7 +56,7 @@ export default function Home() {
     setTimeout(()=>{
       setOnce(true)
     setLoading(false)
-  },10000) //10000
+  },6500) //10000
 }
 },[]);
 
@@ -108,7 +110,6 @@ export default function Home() {
 
       {transition && <PageTransition/> }
       
-      {!loading &&<WorksLanding/>}
      {!loading && 
      <div data-scroll-section>
      <HomePage/>
@@ -123,9 +124,19 @@ export default function Home() {
        className="bg-black pt-12 z-50 w-full h-full rounded-t-[150px]"
        >
        <Slider/>
+       </div>}
+       
+         {!loading && 
+         <div data-scroll-section >
+         <Divider/>
+         </div>
+         }
+
+       {!loading &&
+       <div data-scroll-section >
+       <WorksLanding/>
        </div>
        }
-
 
 
      {!loading &&

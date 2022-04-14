@@ -11,13 +11,12 @@ import { useRouter } from 'next/router';
 function Header() {
     const [title,setTitle] = useRecoilState(TitleState);
     const [go,setGo] = useState(false);
-  const router = useRouter();
+    const router = useRouter();
 
 
     const transtoWorks = () => {
       setTitle("works")
       setGo(true)
-      console.log("rgrg")
     }
     const transtoAbout = () => {
       setTitle("about")
