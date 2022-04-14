@@ -6,7 +6,7 @@ function Divider() {
         <div data-scroll  className="flex flex-col w-full items-center justify-center pb-12">
             <h1  data-scroll data-scroll-speed = "0.8" className="font-Popp text-black mt-6 text-4xl lg:text-8xl " >Me, Myself and I </h1>
             <p data-scroll  data-scroll-speed = "0.2"  className="font-Popp text-left text-2xl font-bold px-12 leading-10 " >
-                <b data-scroll className="text-4xl ">March 2008,</b> My dad came home with that revolutionary out of space Device that called "Computer"
+                <b data-scroll className="text-4xl">March 2008,</b> My dad came home with that revolutionary out of space Device that called &quotComputer&quot
                 I was 8 and my biggest problem at that time was that my favorite Tv cartoon channel was closing at 8pm.
                 Finally now i have something to do after that time, playing with pc ــــــــــ
                 and since then My relationship with Pc established and continues till now and i guess forever.

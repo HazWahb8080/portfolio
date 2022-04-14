@@ -192,42 +192,6 @@ function CBCSlide() {
 
                 </div>
 
-                {/* "@chakra-ui/icons": "^1.1.7",
-    "@chakra-ui/react": "^1.8.6",
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.6",
-    "@next-auth/firebase-adapter": "^0.1.2-pr.183-76202b42.8",
-    "@nextui-org/react": "^1.0.2-beta.4",
-    "@radix-ui/react-toast": "^0.1.1",
-    "@sendgrid/mail": "^7.6.1",
-    "@stripe/react-stripe-js": "^1.7.0",
-    "@stripe/stripe-js": "^1.22.0",
-    "@uploadcare/react-widget": "^1.3.10",
-    "avvvatars-react": "^0.3.1",
-    "axios": "^0.25.0",
-    "date-fns": "^2.28.0",
-    "firebase": "^9.6.6",
-    "framer-motion": "^6.2.8",
-    "html-react-parser": "^1.4.7",
-    "js-file-download": "^0.4.12",
-    "next": "^12.0.10",
-    "next-auth": "^4.2.1",
-    "nodemailer": "^6.7.2",
-    "react": "^17.0.2",
-    "react-currency-format": "^1.1.0",
-    "react-dom": "^17.0.2",
-    "react-dynamic": "^1.0.3",
-    "react-firebase-hooks": "^4.0.1",
-    "react-html-parser": "^2.0.2",
-    "react-icons": "^4.3.1",
-    "react-jump": "^0.0.9",
-    "react-quill": "^1.3.5",
-    "react-scroll": "^1.8.5",
-    "react-timeago": "^6.2.1",
-    "request": "^2.88.2",
-    "stripe": "^8.202.0",
-    "tailwind-scrollbar-hide": "^1.1.7",
-    "uuid": "^8.3.2" */}
 
 
 
@@ -236,7 +200,7 @@ function CBCSlide() {
        </div>
 
 
-            <div data-scroll  className="mb-3 mt-12 md:col-span-2
+            <div  data-scroll  className="mb-3 mt-12 md:col-span-2
              px-4 w-full h-full items-start justify-start flex ">
             <WorksElement
             image=

@@ -56,7 +56,7 @@ export default function Home() {
     setTimeout(()=>{
       setOnce(true)
     setLoading(false)
-  },6500) //10000
+  },7000) //10000
 }
 },[]);
 
