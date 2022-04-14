@@ -1,5 +1,5 @@
 import React,{useRef,useState,useEffect} from 'react'
-import WorksElement1 from '../WorksElement1';
+import WorksElement2 from '../WorksElement2';
 import useHover from '@react-hook/hover';
 
 function CBCSlide() {
@@ -60,22 +60,18 @@ function CBCSlide() {
 
                 <div data-scroll className=" items-start justify-start flex flex-col w-full h-full pt-12 ">
                   
-                  <div data-scroll className="w-full flex flex-col items-start">
-            <h1 data-scroll className=" justify-end font-Popp py-2 px-4 text-green-500  ">
-               Production-Ready
-            </h1>
-            <h1 data-scroll className="smallwords justify-start font-Popp py-2 px-2 md:col-span-1 text-white ">
+                  
+            <h1 data-scroll className="smallwords justify-start font-Popp py-2 px-2 md:col-span-1 text-black ">
                 Cohort Based Courses Platform.
             </h1>
-                  </div>
 
 
             {/* techs used */}
-            <div data-scroll className="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
+            <div data-scroll className="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-black/20">
                 {Array.from({length:8}, (_, i) =>
              <div data-scroll key={i}
               className='font-Popp flex justify-center xl:text-lg text-sm w-full rounded-full px-2 py-1
-               bg-white text-center font-extrabold text-black '
+               bg-black text-center font-extrabold text-white '
               >
                     {
                       i===0 ?  "Nextjs" :
@@ -96,109 +92,109 @@ function CBCSlide() {
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3
              border-t border-white/20">
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef1} >Google and Email Passwordless Auths</h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef2} >Next.js Middleware</h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef3} >Dynamic Routing </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef4} >SendGrid Email Functionality </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef5} >Firebase Storage and UploadCare Integration </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef6} >Stripe payment </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef7} >CRUD </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className='tech2'>
             <h1 data-scroll  ref={techRef8} > 100% Responsive </h1>
               </div>
             </div>
 
             {/* Techs */}
-            <h1 data-scroll  className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Features</h1>
-            <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
+            <h1 data-scroll  className="text-black font-Popp w-full px-4 text-4xl mt-12" >* Features</h1>
+            <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-black/20">
              
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef1} >- Dedicated author and Student Dashboards</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef2} >- Analytics</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef3} >- Payouts functionality</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef4} >- Announcements functionality </h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef5} >- Assignments [with feedback]</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef6} >- Emails functionality</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef7} >- Website Builder</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef8} >- upload Content [per week]</h1>
             </div>
              <div data-scroll 
-              className='feature'>
+              className='feature2'>
             <h1 ref={featRef9} >- Community Functionality</h1>
             </div>
              </div>
 
              {/* libs */}
-             <h1 data-scroll  className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Libraries</h1>
-            <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
-            <div data-scroll className='feature '>
+             <h1 data-scroll  className="text-black font-Popp w-full px-4 text-4xl mt-12" >* Libraries</h1>
+            <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-black/20">
+            <div data-scroll className='feature2 '>
             <p>@chakra-ui/icons</p>
             <p>@chakra-ui/react</p>
             </div>
-            <div data-scroll className='feature'>
+            <div data-scroll className='feature2'>
             <p>@headlessui/react</p>
             <p>@radix-ui/react-toast</p>
             </div>
-            <div data-scroll className='feature'>
+            <div data-scroll className='feature2'>
             <p>avvvatars-react</p>
             <p>@nextui-org/react</p>
             </div>
-            <div data-scroll className='feature'>
+            <div data-scroll className='feature2'>
             <p>@sendgrid/mail</p>
             <p>@stripe/stripe-js</p>
             </div>
-            <div data-scroll className='feature'>
+            <div data-scroll className='feature2'>
             <p>@uploadcare/react-widget</p>
             <p>axios</p>
             </div>
-            <div data-scroll className='feature '>
+            <div data-scroll className='feature2 '>
             <p>date-fns</p>
             <p>js-file-download</p>
             </div>
-            <div data-scroll className='feature '>
+            <div data-scroll className='feature2 '>
             <p>react-quill</p>
             <p>react-timeago</p>
             </div>
@@ -215,7 +211,7 @@ function CBCSlide() {
 
             <div  data-scroll  className="mb-3 mt-12 md:col-span-2
              px-4 w-full h-full items-start justify-start flex ">
-            <WorksElement1
+            <WorksElement2
             image=
             { ishoveringf1 ?  Img1 : ""}
             link={""}

@@ -1,23 +1,19 @@
 import React from 'react';
-import WorksElement from "./WorksElement";
+import WorksElement from "./WorksElement1";
 import CBCSlide from './Slides/CBCSlide';
 
 
-function worksLanding() {
+function CBCSection() {
 
   return (
 
 // //
 
-    <div id="bossy" data-scroll data-scroll-speed="0" data className="w-full h-[2500px]   items-center justify-center flex py-12 bg-black xl:px-12 " >
+    <div id="bossy" data-scroll data-scroll-speed="0"  className="w-full h-[2500px] items-center justify-center flex py-12 
+    bg-black xl:px-12 " >
         {/* words */}
         <div data-scroll  className="w-full h-full items-center justify-start flex flex-col">
           
-
-
-            
-
-
             {/* 1st row */}
             <CBCSlide/>
             {/* 2nd row */}
@@ -31,4 +27,4 @@ function worksLanding() {
   )
 }
 
-export default worksLanding;
+export default CBCSection;

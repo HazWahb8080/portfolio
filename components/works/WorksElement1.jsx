@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 import {motion} from "framer-motion";
 import { useRecoilState } from 'recoil';
-import { TitleState } from './../../atoms/TitleAtom';
-import HandleTrans from './../PageTransition/HandleTrans';
+import { TitleState } from '../../atoms/TitleAtom';
+import HandleTrans from '../PageTransition/HandleTrans';
 import { useRouter } from 'next/router';
 
-function WorksElement({tittle,link,description,image,did,category,subtitle}) {
+function WorksElement1({tittle,link,description,image,did,category,subtitle}) {
 
             const [title,setTitle] = useRecoilState(TitleState);
             const [go,setGo] = useState(false);
@@ -76,4 +76,4 @@ function WorksElement({tittle,link,description,image,did,category,subtitle}) {
   )
 }
 
-export default WorksElement
+export default WorksElement1

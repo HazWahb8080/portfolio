@@ -14,12 +14,24 @@
     src: url("../utils/Fonts/Moret.ttf");
   }
   .tech{
-    @apply font-Popp flex flex-col justify-start items-start xl:text-lg text-sm w-full py-1 text-left font-extrabold text-white
+    @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-white
+  }
+  .tech2{
+    @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-black
   }
   .feature{
-    @apply font-Popp  justify-start items-start xl:text-lg text-sm w-full py-1 text-left font-extrabold text-white
+    @apply font-Popp  justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-white
   }
+  .feature2{
+    @apply font-Popp  justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-black
+  }
+  .lib { 
+    @apply feature grid  grid-cols-1 sm:grid-cols-2 gap-x-0 md:gap-x-3 gap-y-3 md:gap-y-0 
+  }
+  .change-bg { 
+    background:red;
 
+  }
 
 
 

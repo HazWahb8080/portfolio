@@ -6,7 +6,8 @@ import Marqueex from "../components/Marquee/Marquee";
 import Header from './../components/Header/Header';
 import Slider from '../components/Slider/Slider';
 import Footer from '../components/Footer/Footer';
-import WorksLanding from '../components/works/WorksLanding';
+import CBCSection from '../components/works/CBCSection';
+import AwwrdsSection from '../components/works/AwwrdsSection';
 import Logo from './../components/Logo/Logo';
 import { useRef, useState,useEffect } from "react"; 
 import dynamic from 'next/dynamic';
@@ -18,6 +19,8 @@ import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
 import Divider from './../components/divider/Divider';
+import { useInView } from 'react-intersection-observer';
+
 
 
 
@@ -29,6 +32,13 @@ export default function Home() {
   const [loading,setLoading] = useRecoilState(LoaderState);
   const [once,setOnce] = useRecoilState(OnceState);
   const [transition,setTransition] = useRecoilState(TransState);
+
+
+  // to change the background color of the second main project to be cool 
+  const [ref, inView] = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
 
 
    useEffect(() => {
@@ -67,7 +77,7 @@ export default function Home() {
 
 
   return (
-    <div  data-scroll-container 
+    <div  data-scroll-container
     className="bg-white target h-full w-full ">
       <Head>
         <title>Hazem Wahb - Junior Front-end Dev</title>
@@ -89,6 +99,8 @@ export default function Home() {
         "li",
         ".tech",
         ".feature",
+        ".tech2",
+        ".feature2",
         ".workel",
         ".content__item",
         'input[type="text"]',
@@ -121,7 +133,7 @@ export default function Home() {
 
       {!loading &&
        <div  data-scroll-section
-       className="bg-black pt-12 z-50 w-full h-full rounded-t-[150px]"
+       className=" pt-12 z-50 w-full h-full rounded-t-[150px]"
        >
        <Slider/>
        </div>}
@@ -133,8 +145,15 @@ export default function Home() {
          }
 
        {!loading &&
-       <div data-scroll-section >
-       <WorksLanding/>
+       <div  data-scroll-section >
+       <CBCSection/>
+       </div>
+       }
+
+
+       {!loading &&
+       <div className={`mt-24 bg-white `} data-scroll-section >
+       <AwwrdsSection/>
        </div>
        }
 
