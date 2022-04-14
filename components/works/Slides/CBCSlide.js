@@ -58,7 +58,7 @@ function CBCSlide() {
 
                 {/* words about the project */}
 
-                <div data-scroll className=" items-start justify-start flex flex-col w-full h-full pt-12 ">
+                <div data-scroll className=" items-start border border-white/10 justify-start flex flex-col w-full h-full pt-12 ">
                   
                   <div data-scroll className="w-full flex flex-col items-start">
             <h1 data-scroll className=" justify-end font-Popp py-2 px-4 text-green-500  ">
@@ -71,7 +71,7 @@ function CBCSlide() {
 
 
             {/* techs used */}
-            <div data-scroll className="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
+            <div data-scroll className="w-full grid grid-cols-2 pt-12 lg:grid-cols-3 xl:grid-cols-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
                 {Array.from({length:8}, (_, i) =>
              <div data-scroll key={i}
               className='font-Popp flex justify-center xl:text-lg text-sm w-full rounded-full px-2 py-1
@@ -92,7 +92,7 @@ function CBCSlide() {
             </div>
 
             {/* Techs */}
-            <h1 className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Techs</h1>
+            <h1 className="text-white font-Popp w-full pt-4 px-4 border-t border-white/10 text-4xl mt-12" >* Techs</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3
              border-t border-white/20">
              <div data-scroll 
@@ -130,7 +130,7 @@ function CBCSlide() {
             </div>
 
             {/* Techs */}
-            <h1 data-scroll  className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Features</h1>
+            <h1 data-scroll  className="text-white font-Popp w-full px-4 pt-4 border-t border-white/10 text-4xl mt-12" >* Features</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
              
              <div data-scroll 
@@ -172,7 +172,7 @@ function CBCSlide() {
              </div>
 
              {/* libs */}
-             <h1 data-scroll  className="text-white font-Popp w-full px-4 text-4xl mt-12" >* Libraries</h1>
+             <h1 data-scroll  className="text-white font-Popp w-full px-4 pt-4 text-4xl border-t border-white/10 mt-12" >* Libraries</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-white/20">
             <div data-scroll className='feature '>
             <p>@chakra-ui/icons</p>
