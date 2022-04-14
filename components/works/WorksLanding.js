@@ -5,8 +5,8 @@ function worksLanding() {
   return (
     <div data-scroll-section className="w-full h-full   items-center justify-center flex my-12 py-12 xl:px-12 " >
         {/* words */}
-        <div data-scroll data-scroll-speed="1" className="w-full h-full items-center justify-start flex flex-col ">
-            <h1 data-scroll className="smallwords">
+        <div data-scroll  className="w-full h-full items-center justify-start flex flex-col ">
+            <h1 data-scroll-speed="0.5" data-scroll className="smallwords">
                 Passionate, indeed!
             </h1>
 

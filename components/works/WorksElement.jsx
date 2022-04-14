@@ -54,7 +54,7 @@ function WorksElement({tittle,link,description,image,did,category,subtitle}) {
         {/* title */}
         <div data-scroll className="w-full grid grid-cols-1 xl:gap-0 gap-y-4 xl:grid-cols-4 h-full py-2 ">
             <div data-scroll className="flex flex-col w-full col-span-3">
-            <h1 data-scroll className="text-3xl font-Solata" > {tittle} </h1>
+            <h1 data-scroll  className="text-3xl font-Solata" > {tittle} </h1>
             <h1  data-scroll className="text-md font-Solata break-words " > {subtitle} </h1>
             </div>
             <div data-scroll className="flex flex-col justify-start  items-start  w-full col-span-1 ">

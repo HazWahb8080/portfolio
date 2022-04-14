@@ -38,7 +38,7 @@ export default function Home() {
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
         smoothMobile: false,
-        resetNativeScroll: true,
+        resetNativeScroll: false,
       });
     });
 
@@ -117,7 +117,7 @@ export default function Home() {
 
       {!loading &&
        <div  data-scroll-section
-       className="bg-black pt-12  rounded-t-[150px] z-50 w-full h-full"
+       className="bg-black pt-12 z-50 w-full h-full rounded-t-[150px]"
        >
        <Slider/>
        </div>
