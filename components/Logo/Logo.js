@@ -21,7 +21,7 @@ function Logo() {
         borderRadius='30px'
       >
     <li data-scroll className="content-item ">
-					<a className={` link link-leda text-black font-bold font-Solata w-[200px] text-[24px] 
+					<a className={` link link-leda font-bold font-Solata w-[200px] text-[24px] 
           ${router.pathname==="/works" || router.pathname==="/about" || router.pathname==="/contact" ?  "text-white" : "text-black"}`} data-text="HAZEM WAHB">
 						<span> Code by H. </span>
 					</a>
