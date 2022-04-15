@@ -8,7 +8,7 @@ import HandleTrans from './../PageTransition/HandleTrans';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-function Header() {
+function Header({ishovering}) {
     const [title,setTitle] = useRecoilState(TitleState);
     const [go,setGo] = useState(false);
     const router = useRouter();
@@ -50,7 +50,7 @@ function Header() {
          py-2 px-6 w-fit'>
               {Array.from({length:3}, (_, i) =>
              <div data-scroll key={i}
-              className={`menu-item-container  ${router.pathname==="/works" || router.pathname==="/about" || router.pathname==="/contact" 
+              className={`menu-item-container  ${router.pathname==="/works" || router.pathname==="/about" || router.pathname==="/contact" || ishovering
               ? 'text-white' : "text-black"}`}
                 onClick={()=>
                   i===0 ? transtoWorks():

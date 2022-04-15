@@ -2,7 +2,7 @@ import React from 'react';
 import Marquee from "react-fast-marquee";
 
 
-function Marqueex() {
+function Marqueex({ishovering}) {
   return (
     <div  className=" flex w-full overflow-hidden flex-col items-start 
     justify-center target bg-transparent pb-6 pt-4 z-0 ">
@@ -21,9 +21,10 @@ function Marqueex() {
     <div  className="flex flex-col h-full overflow-hidden items-center justify-center w-full">
 
     <div 
-    className='text-black text-6xl space-x-4
-     py-12 z-0   bg-white font-medium 
-     font-Solata  w-full overflow-hidden '>
+    className={`text-black text-6xl space-x-4
+     py-12 z-0  bg-transparent font-medium 
+     font-Solata  w-full overflow-hidden 
+     ${ishovering ? "text-white" : "text-black"}`} >
        <Marquee 
        direction='right'
        pauseOnHover
