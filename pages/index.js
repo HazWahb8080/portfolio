@@ -19,7 +19,6 @@ import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
 import Divider from './../components/divider/Divider';
-import { useInView } from 'react-intersection-observer';
 
 
 
@@ -34,11 +33,7 @@ export default function Home() {
   const [transition,setTransition] = useRecoilState(TransState);
 
 
-  // to change the background color of the second main project to be cool 
-  const [ref, inView] = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+ 
 
 
    useEffect(() => {

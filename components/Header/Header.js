@@ -7,29 +7,36 @@ import { TitleState } from './../../atoms/TitleAtom';
 import HandleTrans from './../PageTransition/HandleTrans';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { ActiveNavState } from './../../atoms/ActiveNavAtom';
 
 function Header({ishovering}) {
     const [title,setTitle] = useRecoilState(TitleState);
+    const [activeNav,setActiveNav] = useRecoilState(ActiveNavState);
     const [go,setGo] = useState(false);
     const router = useRouter();
 
 
     const transtoWorks = () => {
       setTitle("works")
+      setActiveNav("Works")
       setGo(true)
+      console.log(activeNav)
     }
     const transtoAbout = () => {
       setTitle("about")
+      setActiveNav("About")
       setGo(true)
     }
     const transtoContact = () => {
       setTitle("contact")
+      setActiveNav("Contact")
       setGo(true)
     }
    const transtoHome = () => {
      if(router.pathname === "/") return;
       setTitle("/")
       setGo(true)
+      setActiveNav("")
     }
 
 
@@ -51,7 +58,7 @@ function Header({ishovering}) {
               {Array.from({length:3}, (_, i) =>
              <div data-scroll key={i}
               className={`menu-item-container  ${router.pathname==="/works" || router.pathname==="/about" || router.pathname==="/contact" || ishovering
-              ? 'text-white' : "text-black"}`}
+              ? 'text-white' : "text-black"} ${activeNav === ""}   `}
                 onClick={()=>
                   i===0 ? transtoWorks():
                   i===1 ? transtoAbout():
