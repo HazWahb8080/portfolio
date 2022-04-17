@@ -1,21 +1,21 @@
 import React from 'react';
 import WorksElement from "./WorksElement1";
-import CBC from './Slides/CBC';
+import LNKDN from './Slides/LNKDN';
 
 
-function CBCSection() {
+function LNKDNSection() {
 
   return (
 
 // //
 
-    <div id="bossy" data-scroll data-scroll-speed="0"  className="w-full h-[2500px] items-center justify-center flex py-12 
-    bg-black my-12 xl:px-12 " >
+    <div id="bossyXX" data-scroll data-scroll-speed="0"  className="w-full h-[2500px] items-center justify-center flex py-12 
+   bg-black/10 my-12  xl:px-12 " >
         {/* words */}
         <div data-scroll  className="w-full h-full items-center justify-start flex flex-col">
           
             {/* 1st row */}
-            <CBC/>
+            <LNKDN/>
             {/* 2nd row */}
             {/* 3rd row */}
 
@@ -27,4 +27,4 @@ function CBCSection() {
   )
 }
 
-export default CBCSection;
+export default LNKDNSection;

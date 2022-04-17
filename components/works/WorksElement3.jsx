@@ -5,7 +5,7 @@ import { TitleState } from '../../atoms/TitleAtom';
 import HandleTrans from '../PageTransition/HandleTrans';
 import { useRouter } from 'next/router';
 
-function WorksElement2({tittle,link,description,image,did,category,subtitle}) {
+function WorksElement3({tittle,link,description,image,did,category,subtitle}) {
 
             const [title,setTitle] = useRecoilState(TitleState);
             const [go,setGo] = useState(false);
@@ -36,7 +36,7 @@ function WorksElement2({tittle,link,description,image,did,category,subtitle}) {
 
     const [clicked,setClicked] = useState(false);
   return (
-    <div data-scroll data-scroll-sticky data-scroll-target="#bossyX" className="space-y-4 workel
+    <div data-scroll data-scroll-sticky data-scroll-target="#bossyXX" className="space-y-4 workel
      py-3 md:px-12 w-full items-center justify-center flex-col flex z-50 ">
         { go && <HandleTrans/>}
         <div data-scroll className="w-full overflow-hidden z-50  h-full items-center justify-center">
@@ -53,7 +53,7 @@ function WorksElement2({tittle,link,description,image,did,category,subtitle}) {
          src={image}/>
         </div>
         {/* title */}
-        <div data-scroll className="w-full grid grid-cols-1 z-50 text-[#1ED760] xl:gap-0 gap-y-4 xl:grid-cols-4 h-full py-2 ">
+        <div data-scroll className="w-full grid grid-cols-1 z-50 text-[#006097] xl:gap-0 gap-y-4 xl:grid-cols-4 h-full py-2 ">
             <div data-scroll  className="flex flex-col w-full col-span-3">
             <h1 data-scroll   className="text-3xl font-Solata" > {tittle} </h1>
             <h1 data-scroll   className="text-md font-Solata break-words " > {subtitle} </h1>
@@ -76,4 +76,4 @@ function WorksElement2({tittle,link,description,image,did,category,subtitle}) {
   )
 }
 
-export default WorksElement2;
+export default WorksElement3;

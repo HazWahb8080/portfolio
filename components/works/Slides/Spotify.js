@@ -3,7 +3,7 @@ import WorksElement2 from '../WorksElement2';
 import useHover from '@react-hook/hover';
 
 
-function CBCSlide() {
+function Spotify() {
     const options = {enterDelay: 100, leaveDelay: 100};
     // techs
     const techRef0 = useRef(null);
@@ -55,46 +55,47 @@ function CBCSlide() {
       
     {/* first row */}
 
-            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[2500px]  justify-start  md:px-3 w-full">
+            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[2000px]  justify-start  md:px-3 w-full">
 
                 {/* words about the project */}
 
-                <div data-scroll className=" items-start justify-start border border-black/50 flex flex-col w-full h-full pt-12 ">
+                <div data-scroll className=" items-start justify-start border border-[#1ED760]/50 flex flex-col w-full h-full pt-12 ">
                   
                   
-            <h1 data-scroll className="smallwords justify-start font-Popp py-2 px-2 md:col-span-1 text-black ">
-                Cohort Based Courses Platform.
+            <h1 data-scroll className="smallwords justify-start font-Popp py-2 px-5 md:col-span-1 text-[#1ED760] ">
+                Spotify 
+            </h1>
+            <h1 data-scroll className="text-xl px-5 justify-start font-Popp pb-2 pt-6  md:col-span-1 text-[#1ED760] ">
+                Spotify Clone with some additional Features 
             </h1>
 
 
             {/* techs used */}
-            <div data-scroll className="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 mt-4 pb-4 px-3 gap-y-2 gap-x-3 border-t border-black/20">
-                {Array.from({length:8}, (_, i) =>
+            <div data-scroll className="w-full grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 pt-12 mt-4 pb-4 px-3
+             gap-y-2 gap-x-3 border-t border-[#1ED760]/20">
+                {Array.from({length:5}, (_, i) =>
              <div data-scroll key={i}
               className='font-Popp flex justify-center xl:text-lg text-sm w-full rounded-full px-2 py-1
-               bg-black text-center font-extrabold text-white '
+               border-black/80 bg-[#1ED760]/50 border text-center font-bold  text-black '
               >
                     {
                       i===0 ?  "Nextjs" :
                       i===1 ?  "Tailwind Css" :
                       i===2 ?  "Recoil" :
-                      i===3 ?  "Firebase" :
-                      i===4 ?  "ChakraUI" : 
-                      i===5 ?  "NextAuth" :
-                      i===6 ?  "Axios" :
-                      i===7 ?  "FramerMotion" : null
+                      i===3 ?  "NextAuth" : 
+                      i===4 ?  "SpotifyApi" : null
                     }
              </div>
               )} 
             </div>
 
             {/* Techs */}
-            <h1 className="text-black font-Popp w-full px-4 py-4 text-4xl mt-12 border-y border-black/50" >* Techs</h1>
+            <h1 className="text-[#1ED760] font-Popp w-full px-4 py-4 text-4xl mt-12 border-y border-[#1ED760]/50 font-bold" >* Techs</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3
-             border-t border-white/20">
+             ">
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef1} >Google and Email Passwordless Auths</h1>
+            <h1 data-scroll  ref={techRef1} >Spotify Auth. JWT . Access Tokens</h1>
               </div>
              <div data-scroll 
               className='tech2'>
@@ -102,23 +103,23 @@ function CBCSlide() {
               </div>
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef3} >Dynamic Routing </h1>
+            <h1 data-scroll  ref={techRef3} >Custom React Hooks</h1>
               </div>
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef4} >SendGrid Email Functionality </h1>
+            <h1 data-scroll  ref={techRef4} >Debouncing</h1>
               </div>
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef5} >Firebase Storage and UploadCare Integration </h1>
+            <h1 data-scroll  ref={techRef5} >Working with Spotify Web Api SDK </h1>
               </div>
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef6} >Stripe payment </h1>
+            <h1 data-scroll  ref={techRef6} > Working with LottieFiles</h1>
               </div>
              <div data-scroll 
               className='tech2'>
-            <h1 data-scroll  ref={techRef7} >CRUD </h1>
+            <h1 data-scroll  ref={techRef7} >Working with Lodash </h1>
               </div>
              <div data-scroll 
               className='tech2'>
@@ -127,79 +128,46 @@ function CBCSlide() {
             </div>
 
             {/* Techs */}
-            <h1 data-scroll  className="text-black font-Popp w-full px-4 text-4xl border-y py-4 border-black/50 mt-12 " >* Features</h1>
+            <h1 data-scroll  className="text-[#1ED760] font-Popp w-full px-4 text-4xl border-y py-4 border-[#1ED760]/50 mt-12 font-bold " >* Features</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3">
              
              <div data-scroll 
               className='feature2'>
-            <h1 ref={featRef1} >- Dedicated author and Student Dashboards</h1>
+            <h1 ref={featRef1} >- Spotify account Syncing</h1>
             </div>
              <div data-scroll 
               className='feature2'>
-            <h1 ref={featRef2} >- Analytics</h1>
+            <h1 ref={featRef2} >- Play Songs</h1>
             </div>
              <div data-scroll 
               className='feature2'>
-            <h1 ref={featRef3} >- Payouts functionality</h1>
+            <h1 ref={featRef3} >- Control the Volume</h1>
             </div>
              <div data-scroll 
               className='feature2'>
-            <h1 ref={featRef4} >- Announcements functionality </h1>
+            <h1 ref={featRef4} >- Songs and Playlists Syncing </h1>
             </div>
              <div data-scroll 
               className='feature2'>
-            <h1 ref={featRef5} >- Assignments [with feedback]</h1>
-            </div>
-             <div data-scroll 
-              className='feature2'>
-            <h1 ref={featRef6} >- Emails functionality</h1>
-            </div>
-             <div data-scroll 
-              className='feature2'>
-            <h1 ref={featRef7} >- Website Builder</h1>
-            </div>
-             <div data-scroll 
-              className='feature2'>
-            <h1 ref={featRef8} >- upload Content [per week]</h1>
-            </div>
-             <div data-scroll 
-              className='feature2'>
-            <h1 ref={featRef9} >- Community Functionality</h1>
+            <h1 ref={featRef5} >- Search Functionality</h1>
             </div>
              </div>
 
              {/* libs */}
-             <h1 data-scroll  className="text-black font-Popp w-full px-4 text-4xl mt-12 border-y py-4 border-black/50" >* Libraries</h1>
+             <h1 data-scroll  className="text-[#1ED760] font-Popp w-full px-4 text-4xl mt-12 border-y py-4 border-[#1ED760]/50 font-bold " >* Libraries</h1>
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3 ">
             <div data-scroll className='feature2 '>
-            <p>@chakra-ui/icons</p>
-            <p>@chakra-ui/react</p>
+            <p>@lodash</p>
+            <p>@lottiefiles</p>
             </div>
             <div data-scroll className='feature2'>
-            <p>@headlessui/react</p>
-            <p>@radix-ui/react-toast</p>
+            <p>@heroicons/react</p>
+            <p>@tailwind-scrollbar-hide</p>
             </div>
             <div data-scroll className='feature2'>
-            <p>avvvatars-react</p>
-            <p>@nextui-org/react</p>
+            <p>@MUI/material-ui</p>
+            <p>@spotify-web-api-node</p>
             </div>
-            <div data-scroll className='feature2'>
-            <p>@sendgrid/mail</p>
-            <p>@stripe/stripe-js</p>
-            </div>
-            <div data-scroll className='feature2'>
-            <p>@uploadcare/react-widget</p>
-            <p>axios</p>
-            </div>
-            <div data-scroll className='feature2 '>
-            <p>date-fns</p>
-            <p>js-file-download</p>
-            </div>
-            <div data-scroll className='feature2 '>
-            <p>react-quill</p>
-            <p>react-timeago</p>
-            </div>
-
                 </div>
 
 
@@ -216,9 +184,9 @@ function CBCSlide() {
             image=
             { ishoveringf1 ?  Img1 : ""}
             link={""}
-            tittle={"Cohort Based Courses Platform"}
+            tittle={"Spotify"}
             subtitle=
-            {" CBC is a new E-learning Experience developed by Gagan Biyani Udemy Co-founder at the intersection between EdTech and Creation Tools "}
+            {" Spotify Rebuilt "}
             description={""}
             did={" Design and Development "}
             category={"FullStack"}
@@ -229,4 +197,4 @@ function CBCSlide() {
   )
 }
 
-export default CBCSlide;
+export default Spotify;

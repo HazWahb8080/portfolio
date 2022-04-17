@@ -2,7 +2,7 @@ import React,{useRef,useState,useEffect} from 'react'
 import WorksElement1 from '../WorksElement1';
 import useHover from '@react-hook/hover';
 
-function CBCSlide() {
+function CBC() {
     const options = {enterDelay: 100, leaveDelay: 100};
     // techs
     const techRef0 = useRef(null);
@@ -232,4 +232,4 @@ function CBCSlide() {
   )
 }
 
-export default CBCSlide;
+export default CBC;

@@ -7,7 +7,8 @@ import Header from './../components/Header/Header';
 import Slider from '../components/Slider/Slider';
 import Footer from '../components/Footer/Footer';
 import CBCSection from '../components/works/CBCSection';
-import AwwrdsSection from '../components/works/AwwrdsSection';
+import SpotifySection from '../components/works/SpotifySection';
+import LNKDNSection from '../components/works/LNKDNSection';
 import Logo from './../components/Logo/Logo';
 import { useRef, useState,useEffect } from "react"; 
 import dynamic from 'next/dynamic';
@@ -148,7 +149,12 @@ export default function Home() {
 
        {!loading &&
        <div className={`mt-24 bg-white `} data-scroll-section >
-       <AwwrdsSection/>
+       <SpotifySection/>
+       </div>
+       }
+       {!loading &&
+       <div className={`mt-24 bg-white `} data-scroll-section >
+       <LNKDNSection/>
        </div>
        }
 
