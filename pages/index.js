@@ -97,6 +97,8 @@ export default function Home() {
         ".feature",
         ".tech2",
         ".feature2",
+        ".tech3",
+        ".feature3",
         ".workel",
         ".content__item",
         'input[type="text"]',
