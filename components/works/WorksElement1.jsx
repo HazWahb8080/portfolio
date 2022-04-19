@@ -50,7 +50,7 @@ function WorksElement1({tittle,link,description,image,did,category,subtitle}) {
                 ease:[0.83, 0, 0.17, 1],
             }
         }}
-         src={image}/>
+         src={image} className = "object-cover object-center" />
         </div>
         {/* title */}
         <div data-scroll className="w-full grid grid-cols-1 z-50 text-white xl:gap-0 gap-y-4 xl:grid-cols-4 h-full py-2 ">

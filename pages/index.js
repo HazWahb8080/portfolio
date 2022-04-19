@@ -35,8 +35,6 @@ export default function Home() {
 
 
  
-
-
    useEffect(() => {
     if (typeof window === "undefined" || loading) return;
     let scroll;
@@ -45,8 +43,17 @@ export default function Home() {
         scroll = new locomotiveModule.default({
         el:document.querySelector("[data-scroll-container]"),
         smooth: true,
-        smoothMobile: false,
+        smoothMobile: true,
         resetNativeScroll: true,
+        tablet: {
+              breakpoint: 0, 
+            },
+            mobile: {
+                  smooth: true
+              },
+              tablet: {
+                  smooth: true
+              }
       });
     });
 

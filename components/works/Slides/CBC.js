@@ -25,7 +25,24 @@ function CBC() {
     const ishoveringt8 = useHover(techRef8,options);
 
     // images Techs URLs
-    const Img1 = "https://ucarecdn.com/1c589cf7-1b23-4d60-a8d1-a613d2be162e/apes2.webp"; 
+    const AuthImg = "https://ucarecdn.com/db83b9c6-5f7e-4536-9f58-b048724a59fc/1.gif";
+    const MddlImg = "https://ucarecdn.com/59afb153-6047-4bcc-a70b-4bc2004cf9d3/2.png"; 
+    const MailImg = "https://ucarecdn.com/32c8b9d5-9bb4-4d39-b2b2-b185436d92fa/pika20220418T20_14_04110Z.png";
+    const StripeImg = "https://ucarecdn.com/1374f740-be62-4e8e-addd-b0dbbcddc579/localhost3000coursebb18Apri.gif";
+    const CrudImg = "https://ucarecdn.com/b8212f12-e3ad-4194-adaf-5043b2261215/CBC18April2022.gif";
+    const RespImg = "https://ucarecdn.com/b718c526-312f-4ae3-bc84-af069bd79293/localhost3000cohort8ar5RvDwER.gif";
+
+    // images Features URLs 
+    const AnalyticsImg = "https://ucarecdn.com/eb90fa0a-e840-4a85-b4cd-15ab55d945d3/analytics.gif";
+    const BuilderImg = "https://ucarecdn.com/241632e5-7ef7-4359-a27d-9f020ef063f9/builder.gif";
+    const MailsImg = "https://ucarecdn.com/2db4b377-88a6-4717-aee3-ba56cf149032/mails.gif";
+    const AnnsImg = "https://ucarecdn.com/ce3c2e08-db3c-44c4-b101-2236c5dbb7fd/anns.gif";
+    const AsssImg = "https://ucarecdn.com/6977c241-eaa9-4cc2-afc2-1061ce5f7148/asss.gif";
+    const PayoutsImg = "https://ucarecdn.com/566662b9-17d3-4e72-9935-1b91b6d1c6ff/payouts.gif";
+    const CommunityImg = "https://ucarecdn.com/cf6dcfd1-b7c8-4030-b88c-e8586fa50f90/community.gif";
+    const ContentImg = "https://ucarecdn.com/76c0a55e-5dfb-442c-848d-c310302574e7/content.gif";
+
+  
 
 
     // features
@@ -217,7 +234,14 @@ function CBC() {
              px-4 w-full h-full items-start justify-start flex ">
             <WorksElement1
             image=
-            { ishoveringf1 ?  Img1 : ""}
+            { ishoveringt1 ?  AuthImg : ishoveringt2 ?  MddlImg : 
+              ishoveringt4 ? MailImg : ishoveringt6 ? StripeImg :
+              ishoveringt7 ? CrudImg : ishoveringt8 ? RespImg : 
+              ishoveringf2 ? AnalyticsImgImg : ishoveringf3 ? PayoutsImg : 
+              ishoveringf4 ? AnnsImg : ishoveringf5 ? AsssImg : 
+              ishoveringf6 ? MailsImg : ishoveringf7 ? BuilderImg : 
+              ishoveringf8 ? ContentImg : ishoveringf9 ? CommunityImg : 
+                "" }
             link={""}
             tittle={"Cohort Based Courses Platform"}
             subtitle=
