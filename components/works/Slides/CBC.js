@@ -24,6 +24,8 @@ function CBC() {
     const techRef8 = useRef(null);
     const ishoveringt8 = useHover(techRef8,options);
 
+    const DefImg = "https://ucarecdn.com/fbb9840b-01f8-4452-8e7e-906f5fa2f9d4/CohortBasedCourses1.png";
+
     // images Techs URLs
     const AuthImg = "https://ucarecdn.com/db83b9c6-5f7e-4536-9f58-b048724a59fc/1.gif";
     const MddlImg = "https://ucarecdn.com/59afb153-6047-4bcc-a70b-4bc2004cf9d3/2.png"; 
@@ -237,11 +239,11 @@ function CBC() {
             { ishoveringt1 ?  AuthImg : ishoveringt2 ?  MddlImg : 
               ishoveringt4 ? MailImg : ishoveringt6 ? StripeImg :
               ishoveringt7 ? CrudImg : ishoveringt8 ? RespImg : 
-              ishoveringf2 ? AnalyticsImgImg : ishoveringf3 ? PayoutsImg : 
+              ishoveringf2 ? AnalyticsImg : ishoveringf3 ? PayoutsImg : 
               ishoveringf4 ? AnnsImg : ishoveringf5 ? AsssImg : 
               ishoveringf6 ? MailsImg : ishoveringf7 ? BuilderImg : 
               ishoveringf8 ? ContentImg : ishoveringf9 ? CommunityImg : 
-                "" }
+                DefImg }
             link={""}
             tittle={"Cohort Based Courses Platform"}
             subtitle=
