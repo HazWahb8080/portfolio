@@ -101,6 +101,7 @@ export default function Home() {
       clickables={[
         'a',
         "li",
+        ".myworks",
         ".tech",
         ".feature",
         ".tech2",
