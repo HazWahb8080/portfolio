@@ -6,7 +6,7 @@ function ShowSite({link,clss}) { //spotify lnkdn cbc
   const router = useRouter();
     return (
     <a
-    href={link} target="_blank"
+    href={link} target="_blank" rel='noreferrer'
     className={`w-full z-50 rounded-full 
     items-end justify-end flex`} >
         <motion.h1 
