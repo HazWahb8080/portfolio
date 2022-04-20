@@ -9,7 +9,7 @@ function SpotifySection() {
 
 // //
 
-    <div id="bossyX" data-scroll  className="w-full h-[2000px] items-center justify-center flex py-12 
+    <div id="bossyX" data-scroll  className="w-full h-[2000px] items-center justify-center flex  
    bg-[#2941AB]  mt-12 xl:px-12" >
         {/* words */}
         <div data-scroll  className="w-full h-full items-center justify-start flex flex-col">

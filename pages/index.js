@@ -20,6 +20,7 @@ import { TransState } from './../atoms/TransAtom';
 import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
 import Divider from './../components/divider/Divider';
+import DividerWorks from '../components/divider/DividerWorks';
 
 
 
@@ -157,13 +158,19 @@ export default function Home() {
 
 
        {!loading &&
-       <div className={`mt-24 bg-white `} data-scroll-section >
+       <div className={`mt-24 `} data-scroll-section >
        <SpotifySection/>
        </div>
        }
        {!loading &&
-       <div className={`mt-24 bg-white `} data-scroll-section >
+       <div className={`mt-24 `} data-scroll-section >
        <LNKDNSection/>
+       </div>
+       }
+
+       {!loading &&
+       <div className={``} data-scroll-section >
+       <DividerWorks/>
        </div>
        }
 
