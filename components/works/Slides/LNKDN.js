@@ -26,7 +26,7 @@ function LNKDN() {
     const ishoveringt8 = useHover(techRef8,options);
 
     // images Techs URLs
-    const Img1 = "https://ucarecdn.com/1c589cf7-1b23-4d60-a8d1-a613d2be162e/apes2.webp"; 
+    const Img = "https://ucarecdn.com/f3d6beec-959d-4802-83c4-032415e13b04/localhost3000home20April202.gif"; 
 
 
     // features
@@ -55,7 +55,7 @@ function LNKDN() {
       
     {/* first row */}
 
-            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[2000px]  justify-start  md:px-3 w-full">
+            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[1500px]  justify-start  md:px-3 w-full">
 
                 {/* words about the project */}
 
@@ -178,7 +178,7 @@ function LNKDN() {
              px-4 w-full h-full items-start justify-start flex ">
             <WorksElement3
             image=
-            { ishoveringf1 ?  Img1 : ""}
+            {Img}
             link={""}
             tittle={"LinkedIn"}
             subtitle=
