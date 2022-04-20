@@ -4,6 +4,7 @@ import { useRecoilState } from 'recoil';
 import { TitleState } from '../../atoms/TitleAtom';
 import HandleTrans from '../PageTransition/HandleTrans';
 import { useRouter } from 'next/router';
+import ShowSite from './../ShowSite';
 
 function WorksElement1({tittle,link,description,image,did,category,subtitle}) {
 
@@ -39,6 +40,11 @@ function WorksElement1({tittle,link,description,image,did,category,subtitle}) {
     <div data-scroll data-scroll-sticky data-scroll-target="#bossy" className="space-y-4 workel
      py-3 md:px-12 w-full items-center justify-center flex-col flex z-50 ">
         { go && <HandleTrans/>}
+        <ShowSite
+        clss={"cbc"}
+        link={""}
+
+        />
         <div data-scroll className="w-full overflow-hidden z-50  h-full items-center justify-center">
         <motion.img
         onClick={transtoproject1}
