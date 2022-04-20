@@ -59,7 +59,7 @@ function LNKDN() {
 
                 {/* words about the project */}
 
-                <div data-scroll className=" items-start justify-start border border-[#006097]/50 flex flex-col w-full h-full pt-12 ">
+                <div data-scroll className=" items-start justify-start border-x border-b border-[#006097]/50 flex flex-col w-full h-full pt-12 ">
                   
                   
             <h1 data-scroll className="smallwords justify-start font-Popp py-2 px-5 md:col-span-1 text-[#006097] ">
