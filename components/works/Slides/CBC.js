@@ -115,35 +115,35 @@ function CBC() {
             <div data-scroll className="w-full flex flex-col  items-center justify-center pt-4 mt-4 pb-4 px-3 gap-y-2 gap-x-3
              border-t border-white/20">
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt1 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef1} >Google and Email Passwordless Auths</h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt2 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef2} >Next.js Middleware</h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt3 ? "text-white" : "text-white"}`}>
             <h1 data-scroll  ref={techRef3} >Dynamic Routing </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt4 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef4} >SendGrid Email Functionality </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt5 ? "text-white" : "text-white"}`}>
             <h1 data-scroll  ref={techRef5} >Firebase Storage and UploadCare Integration </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt6 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef6} >Stripe payment </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt7 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef7} >CRUD </h1>
               </div>
              <div data-scroll 
-              className='tech'>
+              className={` tech ${ishoveringt8 ? "text-red-600" : "text-white"}`}>
             <h1 data-scroll  ref={techRef8} > 100% Responsive </h1>
               </div>
             </div>
@@ -154,39 +154,39 @@ function CBC() {
              
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef1} >- Dedicated author and Student Dashboards</h1>
+            <h1 ref={featRef1} >1.  Dedicated author and Student Dashboards</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef2} >- Analytics</h1>
+            <h1 ref={featRef2} >2. Analytics</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef3} >- Payouts functionality</h1>
+            <h1 ref={featRef3} >3. Payouts functionality</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef4} >- Announcements functionality </h1>
+            <h1 ref={featRef4} >4. Announcements functionality </h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef5} >- Assignments [with feedback]</h1>
+            <h1 ref={featRef5} >5. Assignments [with feedback]</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef6} >- Emails functionality</h1>
+            <h1 ref={featRef6} >6. Emails functionality</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef7} >- Website Builder</h1>
+            <h1 ref={featRef7} >7. Website Builder</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef8} >- upload Content [per week]</h1>
+            <h1 ref={featRef8} >8. upload Content [per week]</h1>
             </div>
              <div data-scroll 
               className='feature'>
-            <h1 ref={featRef9} >- Community Functionality</h1>
+            <h1 ref={featRef9} >9. Community Functionality</h1>
             </div>
              </div>
 

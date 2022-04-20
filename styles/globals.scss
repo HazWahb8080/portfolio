@@ -14,7 +14,7 @@
     src: url("../utils/Fonts/Moret.ttf");
   }
   .tech{
-    @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-white
+    @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  
   }
   .tech2{
     @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-[#1ED760]
@@ -23,7 +23,9 @@
     @apply font-Popp flex flex-col justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-[#006097]
   }
   .feature{
-    @apply font-Popp  justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-white
+    @apply font-Popp  justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-white hover:scale-105 smooth
+      hover:text-red-700
+
   }
   .feature2{
     @apply font-Popp  justify-start items-start xl:text-2xl md:text-lg text-sm w-full py-1 text-left  text-[#1ED760]

@@ -55,7 +55,7 @@ function Spotify() {
       
     {/* first row */}
 
-            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[2000px]  justify-start  md:px-3 w-full">
+            <div data-scroll  className="grid md:grid-cols-3 grid-cols-2  items-start h-[1500px]  pb-24 justify-start  md:px-3 w-full">
 
                 {/* words about the project */}
 
@@ -182,7 +182,7 @@ function Spotify() {
              px-4 w-full h-full items-start justify-start flex ">
             <WorksElement2
             image=
-            { ishoveringf1 ?  Img1 : ""}
+            {"https://ucarecdn.com/c0ad0bcb-6ed3-4ca0-a133-feb4a558b594/httpsspotify101vercelapplogin.gif"}
             link={""}
             tittle={"Spotify"}
             subtitle=
