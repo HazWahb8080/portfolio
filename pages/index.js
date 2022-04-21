@@ -135,15 +135,6 @@ export default function Home() {
      </div>
      }
 
-     
-     
-
-      {/* {!loading &&
-       <div  data-scroll-section
-       className=" pt-12 z-50 w-full h-full rounded-t-[150px]"
-       >
-       <Slider/>
-       </div>} */}
        
          {!loading && 
          <div data-scroll-section >
