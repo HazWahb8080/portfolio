@@ -7,7 +7,6 @@ import { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { ActiveNavState } from '../atoms/ActiveNavAtom';
-import { Collapse, Text } from "@nextui-org/react";
 import Acc from './../components/WorksPage/Acc';
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -106,7 +105,7 @@ function Work() {
         {router.pathname.replace("/","")}
     </motion.div>}
     {/* page */}
-    { view && <div className="mt-12 py-6 md:px-6 w-full flex flex-col items-center justify-center ">
+    { view && <div className="mt-12 py-6 md:px-6 w-full flex border-b border-white/50 flex-col items-center justify-center ">
         {/* tabs */}
         <div className="text-white font-Popp text-sm md:text-xl  py-3 px-4 w-full
          flex items-center justify-evenly space-x-4 " >
@@ -161,7 +160,7 @@ function Work() {
 
         {/* mini-awwwards */}
 
-        { activeTab === isActive2 &&  <div className='w-full text-white space-y-6 mt-20 ' style={{backgroundColor:"black"}} >
+        { activeTab === isActive2 &&  <div className='w-full text-white space-y-6 mt-32 ' style={{backgroundColor:"black"}} >
         <Acc title={"Mini Awwwrds #1"} subtitle={"awwwards website recreation"} link={"https://awww1.vercel.app/"}
          t1={"Reactjs"} 
          t2={"Locomotive Scroll"} 
@@ -196,7 +195,7 @@ function Work() {
 
         {/* exprimentals */}
 
-        { activeTab === isActive3 &&  <div className='w-full text-white space-y-6 mt-20 ' style={{backgroundColor:"black"}} >
+        { activeTab === isActive3 &&  <div className='w-full text-white space-y-6 mt-32 ' style={{backgroundColor:"black"}} >
         <Acc title={"Mini-Amazon"} subtitle={"when i was learning Redux and Stripe"}
          link={""}
          t1={"Reactjs"} 

@@ -243,7 +243,7 @@ function CBC() {
               ishoveringf4 ? AnnsImg : ishoveringf5 ? AsssImg : 
               ishoveringf6 ? MailsImg : ishoveringf7 ? BuilderImg : 
               ishoveringf8 ? ContentImg : ishoveringf9 ? CommunityImg : 
-                DefImg }
+              DefImg }
             link={""}
             tittle={"Cohort Based Courses Platform"}
             subtitle=
