@@ -11,13 +11,13 @@ function Slider() {
 				<div className="tiles__wrap ">
 					<div className="tiles__line " data-scroll data-scroll-speed="2" data-scroll-target="#grid2" data-scroll-direction="horizontal">
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" />
+						 src="https://ucarecdn.com/cec0070b-55fc-4a45-b20d-f8f6809f2f26/tw.jpg" />
 						<img className="tiles__line-img" 
-						src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						src="https://ucarecdn.com/32674b8f-1187-4ec4-ab49-23cb991eee4f/bts.png" />
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1528484701073-2b22dc76649e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" />
+						 src="https://ucarecdn.com/3ee16fd1-fcba-4f77-bcdb-64406e04fa02/sb.jpg" />
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1566345984367-fa2ba5cedc17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						 src="https://ucarecdn.com/9e6383fd-218c-496d-b6e4-30a7e962efb7/ts.png" />
 
 
 					</div>
@@ -30,13 +30,13 @@ function Slider() {
 				<div className="tiles__wrap">
 					<div className="tiles__line" data-scroll data-scroll-speed="-2" data-scroll-target="#grid3" data-scroll-direction="horizontal">
 						<img className="tiles__line-img"
-						 src="https://ucarecdn.com/9db1060a-91c8-43eb-acac-a22073eed8e9/apes2.webp"  />
+						 src="https://ucarecdn.com/f3d6beec-959d-4802-83c4-032415e13b04/localhost3000home20April202.gif"  />
 						<img className="tiles__line-img" 
-						src="https://images.unsplash.com/photo-1636969423277-8757e3f2cf99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						src="https://ucarecdn.com/fbb9840b-01f8-4452-8e7e-906f5fa2f9d4/CohortBasedCourses1.png" />
 						<img className="tiles__line-img" 
-						src="https://images.unsplash.com/photo-1615842928372-bf534d286c62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						src="https://ucarecdn.com/32c8b9d5-9bb4-4d39-b2b2-b185436d92fa/pika20220418T20_14_04110Z.png" />
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1637431936926-cbc530e851ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						 src="https://ucarecdn.com/76c0a55e-5dfb-442c-848d-c310302574e7/content.gif" />
 					</div>
 				</div>
 				<h2 className="tiles__title tiles__title--left tiles__title--full tiles__title--alt text-white" data-scroll data-scroll-speed="2">Mini-Awwwards</h2>
@@ -47,13 +47,13 @@ function Slider() {
 				<div className="tiles__wrap">
 					<div className="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid4" data-scroll-direction="horizontal">
 						<img className="tiles__line-img" 
-						src="https://images.unsplash.com/photo-1641437639284-fe3b18b7a1a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80/"/>
+						src="https://ucarecdn.com/1374f740-be62-4e8e-addd-b0dbbcddc579/localhost3000coursebb18Apri.gif"/>
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1610216165491-d746db827214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						 src="https://ucarecdn.com/4d552622-55b1-49c0-8208-eebe3b189e85/reactjs.jpg" />
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1626358228177-abe1b30e1283?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						 src="https://ucarecdn.com/05982a4c-f458-4843-959b-32d8590e9427/nextjs.png" />
 						<img className="tiles__line-img"
-						 src="https://images.unsplash.com/photo-1636969423277-8757e3f2cf99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+						 src="https://ucarecdn.com/ec5898b3-db07-4580-ae9b-6bf98675f8c3/git.jpg" />
 					</div>
 				</div>
 				<h2 className="tiles__title tiles__title--right tiles__title--full tiles__title--alt text-white" data-scroll data-scroll-speed="2">Experimentals</h2>
