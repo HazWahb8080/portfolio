@@ -5,20 +5,30 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { TitleState } from './../../atoms/TitleAtom';
 import {motion} from "framer-motion";
+import { ActiveNavState } from './../../atoms/ActiveNavAtom';
 
 
 function PageTransition() {
   const [transition,setTransition] = useRecoilState(TransState);
   const [title,setTitle] = useRecoilState(TitleState);
+  const [activeNav,setActiveNav] = useRecoilState(ActiveNavState);
 
   const [time,setTime] = useState(true);
 
   useEffect(()=>{
-    setTimeout(()=>{
-      setTime(false)
-      setTransition(false)
-    },12000);
-  },[])
+    if(title !== "/") {
+      setTimeout(()=>{
+        setTime(false)
+        setTransition(false)
+      },12000);
+    }
+    else { 
+       setTimeout(()=>{
+        setTime(false)
+        setTransition(false)
+      },1500);
+    }
+  },[]);
 
 
   

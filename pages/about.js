@@ -28,7 +28,7 @@ function Work() {
         { view && <AnimatedCursor
       innerSize={15}
       outerSize={8}
-      color='0,0,0'
+      color='255,255,255'
       outerAlpha={0.4}
       innerScale={0.7}
       outerScale={8}

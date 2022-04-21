@@ -27,7 +27,7 @@ function Work() {
             setView(true)
             setActiveNav("Works")
             setActiveTab("Full-Stack")
-        },0) //1700
+        },1700) //1700
     },[]);
 
     // handling the click of tabs

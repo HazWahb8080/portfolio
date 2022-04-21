@@ -35,8 +35,8 @@ function Header({ishovering}) {
    const transtoHome = () => {
      if(router.pathname === "/") return;
       setTitle("/")
-      setGo(true)
       setActiveNav("")
+      setGo(true)
     }
 
 
