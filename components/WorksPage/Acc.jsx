@@ -18,7 +18,7 @@ function Acc({title,subtitle , t1,t2,t3,t4,t5,t6,t7,link }) {
         </div>
 
         <div className="w-[350px] items-center justify-center flex self-center my-3 py-4 px-6">
-            <a target="_blank" rel="nonreferrer" href={link}
+            <a target="_blank" rel="noreferrer" href={link}
              className="w-full self-center hover:border-white hover:font-medium font-Popp smooth border-b border-white/0 
              text-center pb-3 text-xl"> See Now! </a>
         </div>
