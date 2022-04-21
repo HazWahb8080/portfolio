@@ -39,6 +39,17 @@
   .active-nav {
     @apply menu-item-container text-blue-700 font-bold border-b border-dotted border-blue-500 
   } 
+  .tab-works {
+    @apply border border-white rounded-full px-5 py-1 smooth duration-300 
+           hover:scale-110 hover:bg-white hover:text-black hover:font-bold 
+  }
+  .tab-works-active {
+    @apply border border-white rounded-full px-5 py-1 smooth duration-300 
+           scale-110 bg-white text-black font-bold 
+  }
+  .acc-tech {
+    @apply px-5 py-1 rounded-full font-bold border 
+  }
   
 
 
