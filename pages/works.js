@@ -127,28 +127,32 @@ function Work() {
         
         
         { activeTab === isActive1 &&  <div className='w-full text-white space-y-6 ' style={{backgroundColor:"black"}} >
-        <Acc title={"Cohort-Based Courses Platform"} subtitle={"Production-Ready Startup Project"} link={""}
+        <Acc title={"Cohort-Based Courses Platform"} subtitle={"Production-Ready Startup Project"}
+         link={"https://cbc-three.vercel.app/"}
          t1={"Nextjs"} 
          t2={"Recoil"} 
          t3={"Firebase"} 
          t4={"Tailwind"} 
          t5={"Next-Auth"} 
            />
-        <Acc title={"Spotify"} subtitle={"spotify rebuilt with Search Functionality and re-design"} link={"https://spotify101.vercel.app/"}
+        <Acc title={"Spotify"} subtitle={"spotify rebuilt with Search Functionality and re-design"}
+         link={"https://spotify101.vercel.app/"}
          t1={"Nextjs"} 
          t2={"Recoil"} 
          t3={"SpotifyApi"} 
          t4={"Tailwind"} 
          t5={"MiddleWare"} 
         />
-         <Acc title={"Netflix"} subtitle={"Netflix rebuilt"} link={"https://netflix-clone-yt-theta.vercel.app/"}
+         <Acc title={"Netflix"} subtitle={"Netflix rebuilt"}
+          link={"https://netflix-clone-yt-theta.vercel.app/"}
           t1={"TypeScript"} 
           t2={"Nextjs"} 
           t3={"Recoil"} 
           t4={"RestApi"} 
           t5={"Stripe"}
          />
-        <Acc title={"LinkedIn"} subtitle={"Linkedin rebuilt with Dark/Light Mode"} link={""}
+        <Acc title={"LinkedIn"} subtitle={"Linkedin rebuilt with Dark/Light Mode"}
+         link={""}
          t1={"MongoDB"} 
          t2={"Nextjs"} 
          t3={"Recoil"} 
