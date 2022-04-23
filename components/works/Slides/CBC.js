@@ -244,7 +244,7 @@ function CBC() {
               ishoveringf6 ? MailsImg : ishoveringf7 ? BuilderImg : 
               ishoveringf8 ? ContentImg : ishoveringf9 ? CommunityImg : 
               DefImg }
-            link={""}
+            link={"https://cbc-three.vercel.app/"}
             tittle={"Cohort Based Courses Platform"}
             subtitle=
             {" CBC is a new E-learning Experience developed by Gagan Biyani Udemy Co-founder at the intersection between EdTech and Creation Tools "}

@@ -42,7 +42,7 @@ function WorksElement1({tittle,link,description,image,did,category,subtitle}) {
         { go && <HandleTrans/>}
         <ShowSite
         clss={"cbc"}
-        link={""}
+        link={"https://cbc-three.vercel.app/"}
 
         />
         <div data-scroll className="w-full overflow-hidden z-50  h-full items-center justify-center">
