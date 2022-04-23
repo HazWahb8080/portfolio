@@ -2,7 +2,7 @@ import React from 'react'
 
 function Divider() {
   return (
-    <div data-scroll data-scroll-speed="0" className=" mt-48 z-0 pt-3 items-start justify-start flex flex-col">
+    <div data-scroll data-scroll-speed="-3"  className=" mt-48 z-0 pt-3 items-start justify-start flex flex-col">
         <div data-scroll  className="flex flex-col w-full items-center justify-center pb-12">
             <h1  data-scroll data-scroll-speed = "0.8" className="font-Popp text-black mt-6 text-4xl lg:text-8xl " >Me, Myself and I </h1>
             <p data-scroll  data-scroll-speed = "0.2"  className="font-Popp text-left text-2xl font-bold px-12 leading-10 " >

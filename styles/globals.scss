@@ -51,6 +51,7 @@
     @apply px-5 py-1 rounded-full font-bold border 
   }
   
+  
 
 
 
@@ -170,8 +171,12 @@ body {
 
 
 
-
-
+.con { 
+  @apply items-center justify-center flex w-full
+}
+.table-title {
+  @apply border-b border-white/10  con pt-6 pb-6 text-xl font-Popp text-white/80 text-center self-center
+}
 
 // slider // 
 .content {

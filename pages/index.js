@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css';
 import HomePage from "../components/Home/HomePage";
 import Marqueex from "../components/Marquee/Marquee";
 import Header from './../components/Header/Header';
-import Slider from '../components/Slider/Slider';
 import Footer from '../components/Footer/Footer';
 import CBCSection from '../components/works/CBCSection';
 import SpotifySection from '../components/works/SpotifySection';
@@ -21,6 +20,7 @@ import PageTransition from './../components/PageTransition/PageTransition';
 import { OnceState } from './../atoms/OnceAtom';
 import Divider from './../components/divider/Divider';
 import DividerWorks from '../components/divider/DividerWorks';
+import Skills from './../components/skills/Skills';
 
 
 
@@ -40,6 +40,7 @@ export default function Home() {
     if (typeof window === "undefined" || loading) return;
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
+
 
         scroll = new locomotiveModule.default({
         el:document.querySelector("[data-scroll-container]"),
@@ -137,7 +138,13 @@ export default function Home() {
 
        
          {!loading && 
-         <div data-scroll-section >
+         <div data-scroll-section className="lg:inline-block hidden w-full" >
+         <Skills/>
+         </div>
+         }
+
+         {!loading && 
+         <div data-scroll-section className="hidden lg:flex" >
          <Divider/>
          </div>
          }

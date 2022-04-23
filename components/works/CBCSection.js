@@ -9,7 +9,7 @@ function CBCSection() {
 
 // //
 
-    <div id="bossy" data-scroll data-scroll-speed="1"  className="w-full h-[2500px] items-center justify-center flex 
+    <div id="bossy" data-scroll data-scroll-speed="0"  className="w-full h-[2500px] items-center justify-center flex 
     bg-black my-12 xl:px-12  " >
         {/* words */}
         <div data-scroll  className="w-full h-full items-center justify-start flex flex-col">
