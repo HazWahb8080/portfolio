@@ -5,6 +5,7 @@ import MagneticX from './../Magnetic/MagneticX';
 const imgurl = "https://ucarecdn.com/1d4eba30-dcf1-4b87-b4ad-c805b668fa1d/1633954228782.jfif";
 
 function Footer() {
+ 
   return (
     <div data-scroll  className="h-full mt-24
      rounded-t-[150px] items-start pt-36 px-12 xl:pt-72 xl:px-72 pb-12 justify-start 

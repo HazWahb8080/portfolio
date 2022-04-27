@@ -52,7 +52,7 @@ function HomePage() {
         <div className='items-center px-12  justify-center flex w-full h-full'>
         <a ref={hoverRef}
            className='text-center  text-5xl xl:text-8xl font-Marc'>
-          I am Hazem W. a 22 Junior Passionate Front-end Developer Based in Egypt.
+          I am Hazem W. a 22 Passionate Front-end Developer Based in Egypt.
         </a>
         </div>
       <Marqueex
