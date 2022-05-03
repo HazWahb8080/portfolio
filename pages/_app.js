@@ -1,5 +1,5 @@
 import '../styles/globals.scss';
-import { RecoilRoot, useRecoilState } from 'recoil';
+import { RecoilRoot } from 'recoil';
 import { useRouter } from 'next/router';
 
 

@@ -37,7 +37,7 @@ export default function Home() {
 
  
    useEffect(() => {
-    if (typeof window === "undefined" || loading) return;
+    if (typeof window === "undefined") return;
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
 
