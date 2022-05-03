@@ -92,7 +92,7 @@ export default function Home() {
 
        {loading && !once && (<Preloader/>)}
 
-      <AnimatedCursor
+      { !loading && <AnimatedCursor
       innerSize={15}
       outerSize={8}
       color='186,0,0'
@@ -126,7 +126,7 @@ export default function Home() {
         ".project-item ",
         ".view",
       ]}
-      />
+      />}
 
       {transition && <PageTransition/> }
       
