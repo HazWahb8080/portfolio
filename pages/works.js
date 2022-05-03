@@ -46,7 +46,38 @@ function Work() {
           <div className="w-full h-screen items-center justify-center flex">
 
           
-          
+          { view && <AnimatedCursor
+      innerSize={15}
+      outerSize={8}
+      color='255,255,255'
+      outerAlpha={0.4}
+      innerScale={0.7}
+      outerScale={8}
+      clickables={[
+        'a',
+        "li",
+        ".tech",
+        ".feature",
+        ".workel",
+        ".content__item",
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        ".menu-item-container",
+        ".getintouch-circle-footer",
+        ".project-item ",
+        ".view",
+        ".tab-works",
+        ".acc",
+      ]}
+      />}
 
        
       <div className="h-full w-full  flex flex-col items-start justify-start " >
