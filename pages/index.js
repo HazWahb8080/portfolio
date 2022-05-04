@@ -91,7 +91,7 @@ export default function Home() {
       </Head>
 
 
-      {<AnimatedCursor
+      <AnimatedCursor
       innerSize={15}
       outerSize={8}
       color='186,0,0'
@@ -125,7 +125,7 @@ export default function Home() {
         ".project-item ",
         ".view",
       ]}
-      />}
+      />
 
       {transition && <PageTransition/> }
       
@@ -133,46 +133,46 @@ export default function Home() {
      <div data-scroll-section>
      <HomePage/>
      </div>
-     }
+     
 
        
         
          <div data-scroll-section className="lg:inline-block hidden w-full" >
          <Skills/>
          </div>
-         }
+         
 
         
          <div data-scroll-section className="hidden lg:flex" >
          <Divider/>
          </div>
-         }
+         
 
               <div  data-scroll-section >
        <CBCSection/>
        </div>
-       }
+       
 
 
               <div className={`mt-24 `} data-scroll-section >
        <SpotifySection/>
        </div>
-       }
+       
               <div className={`mt-24 `} data-scroll-section >
        <LNKDNSection/>
        </div>
-       }
+       
 
               <div className={``} data-scroll-section >
        <DividerWorks/>
        </div>
-       }
+       
 
 
             <div data-scroll-section>
        <Footer/>
        </div>
-       }
+       
 
     </div>
   )
