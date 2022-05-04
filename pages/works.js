@@ -24,7 +24,7 @@ function Work() {
       setView(true);
       setActiveNav("Works");
       setActiveTab("Full-Stack");
-    }, 1700); //1700
+    }, 0); //1700
   }, []);
 
   // handling the click of tabs
@@ -110,7 +110,7 @@ function Work() {
             <div className="mt-12 py-6 md:px-6 w-full flex border-b border-white/50 flex-col items-center justify-center ">
               {/* tabs */}
               <div
-                className="text-white font-Popp text-sm md:text-xl  py-3 px-4 w-full
+                className="text-white font-Popp text-sm md:text-xl py-3 px-4 w-full 
          flex items-center justify-evenly space-x-4 "
               >
                 <div
@@ -157,7 +157,12 @@ function Work() {
           )}
           {/* content */}
           {view && (
-            <div className="w-full py-6 px-6 2xl:px-24 flex  items-center justify-center h-[2000px] scrollbar-hide overflow-y-scroll pt-12 ">
+            <div
+              className={`w-full py-6 px-6 2xl:px-24 flex  items-center
+             justify-center h-[2000px] scrollbar-hide overflow-y-scroll pt-72 ${
+               activeTab === isActive1 ? "xl:pt-72" : "xl:pt-24"
+             } `}
+            >
               {activeTab === isActive1 && (
                 <div
                   className="w-full text-white space-y-6 "
