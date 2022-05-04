@@ -65,15 +65,15 @@ export default function Home() {
 
 
 
-  useEffect(()=>{
-    if(!once)
-  {
-    setTimeout(()=>{
-      setOnce(true)
-    setLoading(false)
-  },7000) //10000
-}
-},[]);
+//   useEffect(()=>{
+//     if(!once)
+//   {
+//     setTimeout(()=>{
+//       setOnce(true)
+//     setLoading(true)
+//   },7000) //10000
+// }
+// },[]);
 
 
 
@@ -90,9 +90,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-       {loading && !once && (<Preloader/>)}
 
-      { !loading && <AnimatedCursor
+      {<AnimatedCursor
       innerSize={15}
       outerSize={8}
       color='186,0,0'
@@ -130,52 +129,47 @@ export default function Home() {
 
       {transition && <PageTransition/> }
       
-     {!loading && 
+    
      <div data-scroll-section>
      <HomePage/>
      </div>
      }
 
        
-         {!loading && 
+        
          <div data-scroll-section className="lg:inline-block hidden w-full" >
          <Skills/>
          </div>
          }
 
-         {!loading && 
+        
          <div data-scroll-section className="hidden lg:flex" >
          <Divider/>
          </div>
          }
 
-       {!loading &&
-       <div  data-scroll-section >
+              <div  data-scroll-section >
        <CBCSection/>
        </div>
        }
 
 
-       {!loading &&
-       <div className={`mt-24 `} data-scroll-section >
+              <div className={`mt-24 `} data-scroll-section >
        <SpotifySection/>
        </div>
        }
-       {!loading &&
-       <div className={`mt-24 `} data-scroll-section >
+              <div className={`mt-24 `} data-scroll-section >
        <LNKDNSection/>
        </div>
        }
 
-       {!loading &&
-       <div className={``} data-scroll-section >
+              <div className={``} data-scroll-section >
        <DividerWorks/>
        </div>
        }
 
 
-     {!loading &&
-       <div data-scroll-section>
+            <div data-scroll-section>
        <Footer/>
        </div>
        }
